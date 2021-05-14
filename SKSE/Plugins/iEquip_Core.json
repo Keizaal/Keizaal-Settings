@@ -1,0 +1,2098 @@
+{
+	"spears": [
+		{
+			"name": "Riekling Spear",
+			"pluginName": "Dragonborn.esm",
+			"formID": "0x017720",
+			"isLightMod": false
+		},
+		{
+			"name": "Riekling Spear",
+			"pluginName": "Dragonborn.esm",
+			"formID": "0x01B935",
+			"isLightMod": false
+		},
+		{
+			"name": "Riekling Spear",
+			"pluginName": "Dragonborn.esm",
+			"formID": "0x03C337",
+			"isLightMod": false
+		},
+		{
+			"name": "Steel Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x000D63",
+			"isLightMod": false
+		},
+		{
+			"name": "Orcish Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFA5",
+			"isLightMod": false
+		},
+		{
+			"name": "Nord Hero Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFA6",
+			"isLightMod": false
+		},
+		{
+			"name": "Iron Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFA7",
+			"isLightMod": false
+		},
+		{
+			"name": "Imperial Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFA8",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFA9",
+			"isLightMod": false
+		},
+		{
+			"name": "Forsworn Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFAA",
+			"isLightMod": false
+		},
+		{
+			"name": "Elven Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFAB",
+			"isLightMod": false
+		},
+		{
+			"name": "Ebony Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFAC",
+			"isLightMod": false
+		},
+		{
+			"name": "Dwarven Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFAD",
+			"isLightMod": false
+		},
+		{
+			"name": "Ancient Nord Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFAE",
+			"isLightMod": false
+		},
+		{
+			"name": "Daedric Spear",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00CFAF",
+			"isLightMod": false
+		},
+				{
+			"name": "Throw Javelins",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00F5A7",
+			"isLightMod": false
+		},
+		{
+			"name": "Steel Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x000D63",
+			"isLightMod": false
+		},
+		{
+			"name": "Orcish Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFA5",
+			"isLightMod": false
+		},
+		{
+			"name": "Nord Hero Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFA6",
+			"isLightMod": false
+		},
+		{
+			"name": "Iron Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFA7",
+			"isLightMod": false
+		},
+		{
+			"name": "Imperial Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFA8",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFA9",
+			"isLightMod": false
+		},
+		{
+			"name": "Forsworn Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFAA",
+			"isLightMod": false
+		},
+		{
+			"name": "Elven Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFAB",
+			"isLightMod": false
+		},
+		{
+			"name": "Ebony Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFAC",
+			"isLightMod": false
+		},
+		{
+			"name": "Dwarven Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFAD",
+			"isLightMod": false
+		},
+		{
+			"name": "Ancient Nord Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFAE",
+			"isLightMod": false
+		},
+		{
+			"name": "Daedric Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x00CFAF",
+			"isLightMod": false
+		},
+		{
+			"name": "Throw Javelins",
+			"pluginName": "Spears.esp",
+			"formID": "0x00F5A7",
+			"isLightMod": false
+		},
+		{
+			"name": "Bound Spear Frost",
+			"pluginName": "Spears.esp",
+			"formID": "0x01415A",
+			"isLightMod": false
+		},
+		{
+			"name": "Bound Spear Flame",
+			"pluginName": "Spears.esp",
+			"formID": "0x01416A",
+			"isLightMod": false
+		},
+		{
+			"name": "Bound Spear Spark",
+			"pluginName": "Spears.esp",
+			"formID": "0x01416B",
+			"isLightMod": false
+		},
+		{
+			"name": "Bound Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x01416C",
+			"isLightMod": false
+		},
+		{
+			"name": "Dragonbone Spear",
+			"pluginName": "Spears.esp",
+			"formID": "0x0F3400",
+			"isLightMod": false
+		},
+		{
+			"name": "Iron Hunter's Spear",
+			"pluginName": "Immersive Weapons.esp",
+			"formID": "0x0022EE",
+			"isLightMod": false
+		},
+		{
+			"name": "Orcish Crippler Spear",
+			"pluginName": "Immersive Weapons.esp",
+			"formID": "0x002856",
+			"isLightMod": false
+		},
+		{
+			"name": "Honed Steel Nordic Spear",
+			"pluginName": "Immersive Weapons.esp",
+			"formID": "0x03ABCC",
+			"isLightMod": false
+		},
+		{
+			"name": "Steel Nordic Spear",
+			"pluginName": "Immersive Weapons.esp",
+			"formID": "0x062D62",
+			"isLightMod": false
+		},
+		{
+			"name": "Elven Glaive",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0094A2",
+			"isLightMod": false
+		},
+		{
+			"name": "Elven Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0094A3",
+			"isLightMod": false
+		},
+		{
+			"name": "Steel Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x009A0D",
+			"isLightMod": false
+		},
+		{
+			"name": "Orcish Glaive",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x009A10",
+			"isLightMod": false
+		},
+		{
+			"name": "Ebony Glaive",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x009A13",
+			"isLightMod": false
+		},
+		{
+			"name": "Daedric Glaive",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x009F80",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x00A4EA",
+			"isLightMod": false
+		},
+		{
+			"name": "Iron Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x00A4EB",
+			"isLightMod": false
+		},
+		{
+			"name": "Forsworn Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x00AA53",
+			"isLightMod": false
+		},
+		{
+			"name": "Dwarven Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x00AA62",
+			"isLightMod": false
+		},
+		{
+			"name": "Silver Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x00EB93",
+			"isLightMod": false
+		},
+		{
+			"name": "Imperial Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x010133",
+			"isLightMod": false
+		},
+		{
+			"name": "Ancient Nord Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x011171",
+			"isLightMod": false
+		},
+		{
+			"name": "Ancient Nord Honed Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x011172",
+			"isLightMod": false
+		},
+		{
+			"name": "Nord Hero Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x011174",
+			"isLightMod": false
+		},
+		{
+			"name": "Skyforge Steel Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0116D7",
+			"isLightMod": false
+		},
+		{
+			"name": "Steel Glaive",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x015D8F",
+			"isLightMod": false
+		},
+		{
+			"name": "Nordic Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0308FF",
+			"isLightMod": false
+		},
+		{
+			"name": "Stalhrim Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x030902",
+			"isLightMod": false
+		},
+		{
+			"name": "Dragonbone Spear",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x04EF97",
+			"isLightMod": false
+		},
+		{
+			"name": "Redguard Glaive",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x05E26C",
+			"isLightMod": false
+		},
+		{
+			"name": "Akaviri Glaive",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0633D0",
+			"isLightMod": false
+		},
+		{
+			"name": "Iron Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0D7B8C",
+			"isLightMod": false
+		},
+		{
+			"name": "Dwarven Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0D7B8D",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0DCC95",
+			"isLightMod": false
+		},
+		{
+			"name": "Orcish Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0E1D97",
+			"isLightMod": false
+		},
+		{
+			"name": "Elven Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0E6E9F",
+			"isLightMod": false
+		},
+		{
+			"name": "Ebony Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0EBFA7",
+			"isLightMod": false
+		},
+		{
+			"name": "Daedric Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0F10AD",
+			"isLightMod": false
+		},
+		{
+			"name": "Silver Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0F10AE",
+			"isLightMod": false
+		},
+		{
+			"name": "Nordic Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x0F10B6",
+			"isLightMod": false
+		},
+		{
+			"name": "Redguard Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x1054D7",
+			"isLightMod": false
+		},
+		{
+			"name": "Stalhrim Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x137F1D",
+			"isLightMod": false
+		},
+		{
+			"name": "Dragonbone Trident",
+			"pluginName": "PrvtI_HeavyArmory.esp",
+			"formID": "0x142126",
+			"isLightMod": false
+		}
+	],
+	"javelins": [
+		{
+			"name": "Javelin",
+			"pluginName": "JZBai_ThrowingWpnsLite.esp",
+			"formID": "0x151FA6",
+			"isLightMod": false
+		},
+		{
+			"name": "Dwarven Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EAB6",
+			"isLightMod": false
+		},
+		{
+			"name": "Steel Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EAC4",
+			"isLightMod": false
+		},
+		{
+			"name": "Orcish Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EAC5",
+			"isLightMod": false
+		},
+		{
+			"name": "Nord Hero Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EAC6",
+			"isLightMod": false
+		},
+		{
+			"name": "Iron Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EAC7",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EAC8",
+			"isLightMod": false
+		},
+		{
+			"name": "Forsworn Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EAC9",
+			"isLightMod": false
+		},
+		{
+			"name": "Elven Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EACA",
+			"isLightMod": false
+		},
+		{
+			"name": "Ebony Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EACB",
+			"isLightMod": false
+		},
+		{
+			"name": "Draugr Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EACC",
+			"isLightMod": false
+		},
+		{
+			"name": "Daedric Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x00EACD",
+			"isLightMod": false
+		},
+		{
+			"name": "Explosive Javelin",
+			"pluginName": "SpearsBySoolie.esp",
+			"formID": "0x010071",
+			"isLightMod": false
+		},
+		{
+			"name": "Dwarven Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EAB6",
+			"isLightMod": false
+		},
+		{
+			"name": "Steel Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EAC4",
+			"isLightMod": false
+		},
+		{
+			"name": "Orcish Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EAC5",
+			"isLightMod": false
+		},
+		{
+			"name": "Nord Hero Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EAC6",
+			"isLightMod": false
+		},
+		{
+			"name": "Iron Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EAC7",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EAC8",
+			"isLightMod": false
+		},
+		{
+			"name": "Forsworn Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EAC9",
+			"isLightMod": false
+		},
+		{
+			"name": "Elven Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EACA",
+			"isLightMod": false
+		},
+		{
+			"name": "Ebony Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EACB",
+			"isLightMod": false
+		},
+		{
+			"name": "Draugr Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EACC",
+			"isLightMod": false
+		},
+		{
+			"name": "Daedric Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x00EACD",
+			"isLightMod": false
+		},
+		{
+			"name": "Rocket",
+			"pluginName": "Spears.esp",
+			"formID": "0x010071",
+			"isLightMod": false
+		},
+		{
+			"name": "Bound Javelin",
+			"pluginName": "Spears.esp",
+			"formID": "0x014187",
+			"isLightMod": false
+		}
+	],
+	"grenades": [
+		{
+			"name": "Simple Frost Bomb",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x000D62",
+			"isLightMod": false
+		},
+		{
+			"name": "Simple Incendiary Bomb",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x021C2F",
+			"isLightMod": false
+		},
+		{
+			"name": "Simple Shock Bomb",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x0243CB",
+			"isLightMod": false
+		},
+		{
+			"name": "Powerful Frost Bomb",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x055C26",
+			"isLightMod": false
+		},
+		{
+			"name": "Powerful Incendiary Bomb",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x053474",
+			"isLightMod": false
+		},
+		{
+			"name": "Powerful Shock Grenade",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x0583DC",
+			"isLightMod": false
+		},
+		{
+			"name": "Devastating Frost Bomb",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x055C31",
+			"isLightMod": false
+		},
+		{
+			"name": "Devastating Incendiary Bomb",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x05347E",
+			"isLightMod": false
+		},
+		{
+			"name": "Devastating Shock Grenade",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x0583E6",
+			"isLightMod": false
+		},
+		{
+			"name": "Grenade",
+			"pluginName": "JZBai_ThrowingWpnsLite.esp",
+			"formID": "0x15AC05",
+			"isLightMod": false
+		},
+		{
+			"name": "Frost Potion Grenade",
+			"pluginName": "JZBai_ThrowingWpnsLite.esp",
+			"formID": "0x183B04",
+			"isLightMod": false
+		},
+		{
+			"name": "Oil Pot",
+			"pluginName": "JZBai_ThrowingWpnsLite.esp",
+			"formID": "0x183B05",
+			"isLightMod": false
+		},
+		{
+			"name": "Smoke Bomb",
+			"pluginName": "JZBai_ThrowingWpnsLite.esp",
+			"formID": "0x183B06",
+			"isLightMod": false
+		}
+	],
+	"throwingAxes": [
+		{
+			"name": "Throwing Axe",
+			"pluginName": "JZBai_ThrowingWpnsLite.esp",
+			"formID": "0x15AC04",
+			"isLightMod": false
+		}
+	],
+	"throwingKnives": [
+		{
+			"name": "Throwing Knife",
+			"pluginName": "JZBai_ThrowingWpnsLite.esp",
+			"formID": "0x151FA7",
+			"isLightMod": false
+		}
+	],
+	"waxes": [
+		{
+			"name": "Potent Wax of Arthropod Pain",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x56293C",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Arthropod Harm",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623203",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Arthropod Bane",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623204",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Daedra's Pain",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x56293B",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Daedra's Harm",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623206",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Daedra's Bane",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623208",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Dragon's Pain",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x56293E",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Dragon's Harm",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62320A",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Dragon's Bane",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62320C",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Elves Pain",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x562940",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Elves Harm",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62320E",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Elves Bane",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623210",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Human Pain",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x562942",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Human Harm",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623212",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Human Bane",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623214",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Vampire Pain",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623216",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Vampire Harm",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x562944",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Vampire Bane",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x623218",
+			"isLightMod": false
+		},
+		{
+			"name": "Weak Wax of Damage Health",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D436",
+			"isLightMod": false
+		},
+		{
+			"name": "Standard Wax of Damage Health",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D43E",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Damage Health",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D43B",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Damage Health",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D43C",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Damage Health",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D43A",
+			"isLightMod": false
+		},
+		{
+			"name": "Weak Wax of Damage Magicka",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D44D",
+			"isLightMod": false
+		},
+		{
+			"name": "Standard Wax of Damage Magicka",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D447",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Damage Magicka",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D448",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Damage Magicka",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D449",
+			"isLightMod": false
+		},
+		{
+			"name": "Devastating Wax of Damage Magicka",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D44A",
+			"isLightMod": false
+		},
+		{
+			"name": "Weak Wax of Damage Stamina",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D457",
+			"isLightMod": false
+		},
+		{
+			"name": "Standard Wax of Damage Stamina",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D458",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Damage Stamina",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D45A",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Damage Stamina",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D45B",
+			"isLightMod": false
+		},
+		{
+			"name": "Devastating Wax of Damage Stamina",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x62D45C",
+			"isLightMod": false
+		},
+		{
+			"name": "Weak Wax of Damage Undead",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x632568",
+			"isLightMod": false
+		},
+		{
+			"name": "Standard Wax of Damage Undead",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x632569",
+			"isLightMod": false
+		},
+		{
+			"name": "Potent Wax of Damage Undead",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x63256B",
+			"isLightMod": false
+		},
+		{
+			"name": "Malign Wax of Damage Undead",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x63256D",
+			"isLightMod": false
+		},
+		{
+			"name": "Deadly Wax of Damage Undead",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x63256F",
+			"isLightMod": false
+		}
+	],
+	"oils": [
+		{
+			"name": "Fire Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x006EB4",
+			"isLightMod": false
+		},
+		{
+			"name": "Fire Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x00CA41",
+			"isLightMod": false
+		},
+		{
+			"name": "Frost Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x00CA5B",
+			"isLightMod": false
+		},
+		{
+			"name": "Frost Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x00CA59",
+			"isLightMod": false
+		},
+		{
+			"name": "Shock Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x00CFD1",
+			"isLightMod": false
+		},
+		{
+			"name": "Shock Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x00CFD4",
+			"isLightMod": false
+		},
+		{
+			"name": "Caustic Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x012687",
+			"isLightMod": false
+		},
+		{
+			"name": "Caustic Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x012688",
+			"isLightMod": false
+		},
+		{
+			"name": "Sanguine Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1EFB45",
+			"isLightMod": false
+		},
+		{
+			"name": "Sanguine Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1EFB46",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Animal",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1762A8",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Animal",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1999BB",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Beastfolk",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2ED5",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Beastfolk",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2ED6",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Creature",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2ED8",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Creature",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EDA",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Daedra",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EDC",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Daedra",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EDE",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Dragon",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EE0",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Dragon",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EE2",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Human",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EE4",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Human",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EE6",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Mer",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EE8",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Mer",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EEA",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Undead",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EEC",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Undead",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1B2EEE",
+			"isLightMod": false
+		},
+		{
+			"name": "Fire Oil I (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEEA0",
+			"isLightMod": false
+		},
+		{
+			"name": "Fire Oil II (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEEA2",
+			"isLightMod": false
+		},
+		{
+			"name": "Frost Oil I (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEEA4",
+			"isLightMod": false
+		},
+		{
+			"name": "Frost Oil II (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEEA6",
+			"isLightMod": false
+		},
+		{
+			"name": "Shock Oil I (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEEA8",
+			"isLightMod": false
+		},
+		{
+			"name": "Shock Oil II (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEEAA",
+			"isLightMod": false
+		},
+		{
+			"name": "Caustic Oil I (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1F9D54",
+			"isLightMod": false
+		},
+		{
+			"name": "Caustic Oil II (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1F9D55",
+			"isLightMod": false
+		},
+		{
+			"name": "Sanguine Oil I (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE79",
+			"isLightMod": false
+		},
+		{
+			"name": "Sanguine Oil II (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE7A",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Animal (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE7C",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Animal (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE7E",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Beastfolk (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE80",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Beastfolk (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE82",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Creature (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE84",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Creature (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE86",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Daedra (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE88",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Daedra (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE8A",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Dragon (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE8C",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Dragon (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE8E",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Human (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE90",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Human (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE92",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Mer (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE94",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Mer (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE96",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil I: Undead (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE98",
+			"isLightMod": false
+		},
+		{
+			"name": "Animus Oil II: Undead (Diluted)",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x1FEE9A",
+			"isLightMod": false
+		},
+		{
+			"name": "Paralysis Oil",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x012C00",
+			"isLightMod": false
+		},
+		{
+			"name": "Fear Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x012C05",
+			"isLightMod": false
+		},
+		{
+			"name": "Fear Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x012C06",
+			"isLightMod": false
+		},
+		{
+			"name": "Frenzy Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x0187BF",
+			"isLightMod": false
+		},
+		{
+			"name": "Frenzy Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x0187C1",
+			"isLightMod": false
+		},
+		{
+			"name": "Sapping Oil I",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x0203BF",
+			"isLightMod": false
+		},
+		{
+			"name": "Sapping Oil II",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x0203C0",
+			"isLightMod": false
+		},
+		{
+			"name": "Lethargic Oil",
+			"pluginName": "SmithingOils.esp",
+			"formID": "0x00BD79",
+			"isLightMod": false
+		}
+	],
+	"spellWards": [
+		{
+			"name": "Lesser Ward",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x013018",
+			"isLightMod": false
+		},
+		{
+			"name": "Lesser Ward",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x072319",
+			"isLightMod": false
+		},
+		{
+			"name": "Greater Ward",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x0211F0",
+			"isLightMod": false
+		},
+		{
+			"name": "Greater Ward",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x07231B",
+			"isLightMod": false
+		},
+		{
+			"name": "Steadfast Ward",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x0211F1",
+			"isLightMod": false
+		},
+		{
+			"name": "Steadfast Ward",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x07231A",
+			"isLightMod": false
+		},
+		{
+			"name": "Arcane Ward (Rank I)",
+			"pluginName": "Requiem.esp",
+			"formID": "0x225F3B",
+			"isLightMod": false
+		},
+		{
+			"name": "Bound Shield",
+			"pluginName": "Bound Shield.esp",
+			"formID": "0x000D64",
+			"isLightMod": false
+		},
+		{
+			"name": "Eminent Ward",
+			"pluginName": "WardsFunctionalitiesExtended.esp",
+			"formID": "0x061BE4",
+			"isLightMod": false
+		},
+		{
+			"name": "Master Ward",
+			"pluginName": "WardsFunctionalitiesExtended.esp",
+			"formID": "0x066CEB",
+			"isLightMod": false
+		}
+	],
+	"fire": [
+		{
+			"name": "Exploding Steel Bolt of Fire",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x00F1A0",
+			"isLightMod": false
+		},
+		{
+			"name": "Exploding Dwarven Bolt of Fire",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x00F1B1",
+			"isLightMod": false
+		},
+		{
+			"name": "Fire Arrow",
+			"pluginName": "ccbgssse002-exoticarrows.esl",
+			"formID": "0x802",
+			"isLightMod": true
+		},
+		{
+			"name": "Fire Arrow",
+			"pluginName": "Sneak Tools.esp",
+			"formID": "0x08A734",
+			"isLightMod": false
+		},
+		{
+			"name": "Fire Bolt",
+			"pluginName": "Sneak Tools.esp",
+			"formID": "0x0ABC61",
+			"isLightMod": false
+		},
+		{
+			"name": "Fire Arrow",
+			"pluginName": "ArcaneArchery.esp",
+			"formID": "0x000D63",
+			"isLightMod": false
+		},
+		{
+			"name": "Flaming Arrows",
+			"pluginName": "ElementalArrows.esp",
+			"formID": "0x000D62",
+			"isLightMod": false
+		},
+		{
+			"name": "Flaming Bolt",
+			"pluginName": "ElementalArrows.esp",
+			"formID": "0x05B32A",
+			"isLightMod": false
+		},
+		{
+			"name": "Crimson Flame Arrows",
+			"pluginName": "ElementalArrows.esp",
+			"formID": "0x046F1A",
+			"isLightMod": false
+		}
+	],
+	"ice": [
+		{
+			"name": "Exploding Steel Bolt of Ice",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x00F1BB",
+			"isLightMod": false
+		},
+		{
+			"name": "Exploding Dwarven Bolt of Ice",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x00F1B7",
+			"isLightMod": false
+		},
+		{
+			"name": "Ice Arrow",
+			"pluginName": "ccbgssse002-exoticarrows.esl",
+			"formID": "0x803",
+			"isLightMod": true
+		},
+		{
+			"name": "Ice Arrow",
+			"pluginName": "ArcaneArchery.esp",
+			"formID": "0x000D6A",
+			"isLightMod": false
+		},
+		{
+			"name": "Frost Arrows",
+			"pluginName": "ElementalArrows.esp",
+			"formID": "0x00331C",
+			"isLightMod": false
+		},
+		{
+			"name": "Cobalt Frost Arrows",
+			"pluginName": "ElementalArrows.esp",
+			"formID": "0x05B332",
+			"isLightMod": false
+		}
+	],
+	"shock": [
+		{
+			"name": "Exploding Steel Bolt of Shock",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x00F1BC",
+			"isLightMod": false
+		},
+		{
+			"name": "Exploding Dwarven Bolt of Shock",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x00F1B9",
+			"isLightMod": false
+		},
+		{
+			"name": "Lightning Arrow",
+			"pluginName": "ccbgssse002-exoticarrows.esl",
+			"formID": "0x804",
+			"isLightMod": true
+		},
+		{
+			"name": "Shock Arrow",
+			"pluginName": "ArcaneArchery.esp",
+			"formID": "0x000D6B",
+			"isLightMod": false
+		},
+		{
+			"name": "Shock Arrows",
+			"pluginName": "ElementalArrows.esp",
+			"formID": "0x006026",
+			"isLightMod": false
+		},
+		{
+			"name": "Thunderbolt Arrows",
+			"pluginName": "ElementalArrows.esp",
+			"formID": "0x060442",
+			"isLightMod": false
+		}
+	],
+	"poison": [
+		{
+			"name": "Poison Arrow",
+			"pluginName": "ArcaneArchery.esp",
+			"formID": "0x0038C5",
+			"isLightMod": false
+		}
+	],
+	"salves": [
+		{
+			"name": "Poultice - Simple Antiseptic",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x5535B6",
+			"isLightMod": false
+		},
+		{
+			"name": "Poultice - Simple Healing",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x5B3B08",
+			"isLightMod": false
+		},
+		{
+			"name": "Poultice - Standard Antiseptic",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x5B3B15",
+			"isLightMod": false
+		},
+		{
+			"name": "Poultice - Standard Healing",
+			"pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+			"formID": "0x5535B8",
+			"isLightMod": false
+		},
+		{
+			"name": "Poultice",
+			"pluginName": "Vigor - Combat and Injuries.esp",
+			"formID": "0x299D19",
+			"isLightMod": false
+		}
+	],
+	"bandages": [
+		{
+			"name": "Bandage",
+			"pluginName": "Vigor - Combat and Injuries.esp",
+			"formID": "0x36E7E6",
+			"isLightMod": false
+		},
+		{
+			"name": "Bandage (Dirty)",
+			"pluginName": "Vigor - Combat and Injuries.esp",
+			"formID": "0x3738EC",
+			"isLightMod": false
+		}
+	],
+	"rangedSpells": [
+		{
+			"name": "Calm",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEE9",
+			"isLightMod": false
+		},
+		{
+			"name": "Chain Lightning",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x045F9D",
+			"isLightMod": false
+		},
+		{
+			"name": "Courage",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEE8",
+			"isLightMod": false
+		},
+		{
+			"name": "Dread Zombie",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x096D95",
+			"isLightMod": false
+		},
+		{
+			"name": "Fear",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEEA",
+			"isLightMod": false
+		},
+		{
+			"name": "Fireball",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x01C789",
+			"isLightMod": false
+		},
+		{
+			"name": "Firebolt",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x012FD0",
+			"isLightMod": false
+		},
+		{
+			"name": "Frenzy",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEEE",
+			"isLightMod": false
+		},
+		{
+			"name": "Fury",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEEB",
+			"isLightMod": false
+		},
+		{
+			"name": "Ice Spike",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x02B96C",
+			"isLightMod": false
+		},
+		{
+			"name": "Ice Storm",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x045F9C",
+			"isLightMod": false
+		},
+		{
+			"name": "Icy Spear",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x10F7EC",
+			"isLightMod": false
+		},
+		{
+			"name": "Incinerate",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x10F7ED",
+			"isLightMod": false
+		},
+		{
+			"name": "Lightning Bolt",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x02DD29",
+			"isLightMod": false
+		},
+		{
+			"name": "Pacify",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEED",
+			"isLightMod": false
+		},
+		{
+			"name": "Paralyze",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x05AD5F",
+			"isLightMod": false
+		},
+		{
+			"name": "Raise Zombie",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x07E8E1",
+			"isLightMod": false
+		},
+		{
+			"name": "Rally",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEEC",
+			"isLightMod": false
+		},
+		{
+			"name": "Reanimate Corpse",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x065BD7",
+			"isLightMod": false
+		},
+		{
+			"name": "Repel Lesser Undead",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04D3F8",
+			"isLightMod": false
+		},
+		{
+			"name": "Repel Undead",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x05DD60",
+			"isLightMod": false
+		},
+		{
+			"name": "Revenant",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x096D94",
+			"isLightMod": false
+		},
+		{
+			"name": "Rout",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEEF",
+			"isLightMod": false
+		},
+		{
+			"name": "Soul Trap",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DBA4",
+			"isLightMod": false
+		},
+		{
+			"name": "Thunderbolt",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x10F7EE",
+			"isLightMod": false
+		},
+		{
+			"name": "Turn Greater Undead",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x05DD5E",
+			"isLightMod": false
+		},
+		{
+			"name": "Turn Lesser Undead",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04B146",
+			"isLightMod": false
+		},
+		{
+			"name": "Turn Undead",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x05DD5D",
+			"isLightMod": false
+		},
+		{
+			"name": "Sun Fire",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x003F52",
+			"isLightMod": false
+		},
+		{
+			"name": "Vampire's Bane",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x0038B6",
+			"isLightMod": false
+		},
+		{
+			"name": "Lightning Jolt",
+			"pluginName": "Requiem.esp",
+			"formID": "0x029AFF",
+			"isLightMod": false
+		},
+		{
+			"name": "Arcane Missile",
+			"pluginName": "Requiem.esp",
+			"formID": "0x02958A",
+			"isLightMod": false
+		},
+		{
+			"name": "Snow Spume",
+			"pluginName": "Requiem.esp",
+			"formID": "0x02A074",
+			"isLightMod": false
+		},
+		{
+			"name": "Venomous Blast",
+			"pluginName": "Requiem.esp",
+			"formID": "0x025F29",
+			"isLightMod": false
+		},
+		{
+			"name": "Firestrike",
+			"pluginName": "Requiem.esp",
+			"formID": "0x029B0E",
+			"isLightMod": false
+		},
+		{
+			"name": "Venomous Shock",
+			"pluginName": "Requiem.esp",
+			"formID": "0x028529",
+			"isLightMod": false
+		},
+		{
+			"name": "Venomous Storm",
+			"pluginName": "Requiem.esp",
+			"formID": "0x029AF4",
+			"isLightMod": false
+		},
+		{
+			"name": "Arcane Storm",
+			"pluginName": "Requiem.esp",
+			"formID": "0x45D3AC",
+			"isLightMod": false
+		},
+		{
+			"name": "Arcane Resonance",
+			"pluginName": "Requiem.esp",
+			"formID": "0x02852F",
+			"isLightMod": false
+		},
+		{
+			"name": "Blackout",
+			"pluginName": "Requiem.esp",
+			"formID": "0x073737",
+			"isLightMod": false
+		},
+		{
+			"name": "Mind Maelstrom",
+			"pluginName": "Requiem.esp",
+			"formID": "0x5C1E31",
+			"isLightMod": false
+		}
+	],
+	"rangedSpells": [
+		{
+			"name": "Staff of Calm",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B8B",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Chain Lightning",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B84",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Courage",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B88",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Fear",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B8C",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Fireballs",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B82",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Firebolts",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04C6CA",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Frenzy",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B8F",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Fury",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B89",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Ice Spikes",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DED8",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Ice Storms",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B83",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Icy Spear",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x10FCF7",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Incineration",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x10FCF2",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Lightning Bolts",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x04DEE3",
+			"isLightMod": false
+		},
+		{
+			"name": "Grand Staff of Charming",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B91",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Paralysis",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B73",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Inspiration",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B8E",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Repulsion",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B9A",
+			"isLightMod": false
+		},
+		{
+			"name": "Grand Staff of Repulsion",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B9B",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Vanquishment",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B92",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Soul Trapping",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x0BE122",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Thunderbolts",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x10FCF4",
+			"isLightMod": false
+		},
+		{
+			"name": "Grand Staff of Turning",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B97",
+			"isLightMod": false
+		},
+		{
+			"name": "Minor Staff of Turning",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B94",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Turning",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B95",
+			"isLightMod": false
+		},
+		{
+			"name": "Gadnor's Staff of Charming",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x046E0B",
+			"isLightMod": false
+		},
+		{
+			"name": "Halldir's Staff",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x0AB704",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Arcane Authority",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x0940D8",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Jyrik Gauldurson",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x0E5F43",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Tandil",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x06A093",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Zombies",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B74",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Reanimation",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B76",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Revenants",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B7A",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Dread Zombies",
+			"pluginName": "Skyrim.esm",
+			"formID": "0x029B7C",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Chain Lightning",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x011D56",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Ruunvald",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x01958C",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Fireballs",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x011D57",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Firebolts",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x011D5D",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Ice Spikes",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x011D5E",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Ice Storms",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x011D5F",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Lightning Bolts",
+			"pluginName": "Dawnguard.esm",
+			"formID": "0x011D60",
+			"isLightMod": false
+		},
+		{
+			"name": "Daedric Staff of Infernal Flames",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072182",
+			"isLightMod": false
+		},
+		{
+			"name": "Ebony Staff of Paralysis",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072163",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Staff of Icy Spears",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072165",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Staff of Incineration",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072164",
+			"isLightMod": false
+		},
+		{
+			"name": "Glass Staff of Thunderbolts",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072166",
+			"isLightMod": false
+		},
+		{
+			"name": "Silver Staff of Fireballs",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072157",
+			"isLightMod": false
+		},
+		{
+			"name": "Silver Staff of Icestorms",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072158",
+			"isLightMod": false
+		},
+		{
+			"name": "Silver Staff of Lightning Shackles",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072159",
+			"isLightMod": false
+		},
+		{
+			"name": "Wooden Staff of Firebolts",
+			"pluginName": "Requiem.esp",
+			"formID": "0x07215E",
+			"isLightMod": false
+		},
+		{
+			"name": "Wooden Staff of Ice Spikes",
+			"pluginName": "Requiem.esp",
+			"formID": "0x07215F",
+			"isLightMod": false
+		},
+		{
+			"name": "Wooden Staff of Lightning Bolts",
+			"pluginName": "Requiem.esp",
+			"formID": "0x072160",
+			"isLightMod": false
+		},
+		{
+			"name": "Abominable Staff",
+			"pluginName": "CollegeOfWinterholdImmersive.esp",
+			"formID": "0x49A45D",
+			"isLightMod": false
+		},
+		{
+			"name": "Staff of Worms",
+			"pluginName": "Undeath.esp",
+			"formID": "0x035286",
+			"isLightMod": false
+		}
+	]
+}

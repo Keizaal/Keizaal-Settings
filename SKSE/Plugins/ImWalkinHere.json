@@ -1,0 +1,6 @@
+{
+	"disableDialogueCollision": true,
+	"disableAllyCollision": true,
+	"disableSummonCollision": true,
+	"disableAllySummonCollision": true
+}
