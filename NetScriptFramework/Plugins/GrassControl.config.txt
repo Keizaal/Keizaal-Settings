@@ -71,7 +71,7 @@ SuperDenseGrass = False
 #    Type: (int32)                                                                                                     #
 ########################################################################################################################
 
-SuperDenseMode = 8
+SuperDenseMode = 7
 
 ########################################################################################################################
 #   Profiler report                                                                                                    #
@@ -96,7 +96,7 @@ ProfilerReport = False
 #    Type: (boolean)                                                                                                   #
 ########################################################################################################################
 
-UseGrassCache = true
+UseGrassCache = True
 
 ########################################################################################################################
 #   Extend grass distance                                                                                              #
@@ -108,7 +108,7 @@ UseGrassCache = true
 #    Type: (boolean)                                                                                                   #
 ########################################################################################################################
 
-ExtendGrassDistance = true
+ExtendGrassDistance = True
 
 ########################################################################################################################
 #   Extend grass count                                                                                                 #
@@ -131,7 +131,7 @@ ExtendGrassCount = True
 #    Type: (int32)                                                                                                     #
 ########################################################################################################################
 
-EnsureMaxGrassTypesPerTextureSetting = 7
+EnsureMaxGrassTypesPerTextureSetting = 15
 
 ########################################################################################################################
 #   Overwrite grass distance                                                                                           #
@@ -146,7 +146,7 @@ EnsureMaxGrassTypesPerTextureSetting = 7
 #    Type: (float)                                                                                                     #
 ########################################################################################################################
 
-OverwriteGrassDistance = 7000
+OverwriteGrassDistance = 12000
 
 ########################################################################################################################
 #   Overwrite grass fade range                                                                                         #
@@ -160,7 +160,7 @@ OverwriteGrassDistance = 7000
 #    Type: (float)                                                                                                     #
 ########################################################################################################################
 
-OverwriteGrassFadeRange = 4000
+OverwriteGrassFadeRange = 8000
 
 ########################################################################################################################
 #   Overwrite min grass size                                                                                           #
@@ -174,7 +174,7 @@ OverwriteGrassFadeRange = 4000
 #    Type: (int32)                                                                                                     #
 ########################################################################################################################
 
-OverwriteMinGrassSize = -1
+OverwriteMinGrassSize = 50
 
 ########################################################################################################################
 #   Only load from cache                                                                                               #
@@ -184,7 +184,7 @@ OverwriteMinGrassSize = -1
 #    Type: (boolean)                                                                                                   #
 ########################################################################################################################
 
-OnlyLoadFromCache = true
+OnlyLoadFromCache = True
 
 ########################################################################################################################
 #   Skip pregenerate world spaces                                                                                      #
@@ -195,7 +195,7 @@ OnlyLoadFromCache = true
 #    Type: (string)                                                                                                    #
 ########################################################################################################################
 
-SkipPregenerateWorldSpaces = "DLC2ApocryphaWorld;DLC01Boneyard;WindhelmPitWorldspace"
+SkipPregenerateWorldSpaces = "DLC2ApocryphaWorld;DLC01Boneyard;WindhelmPitWorldspace;DLC1ForebearsHoldout;DLC1VampireCastleCourtyard;WhiterunWorld;CWSiegeTestWorld;TestDLC1PlantWorld;TestMeganWorld;TestSnow;JaphetsFollyWorld;FXLightWorldSpace;KarthspireRedoubtWorld;FallowstoneCaveWorldStart;LabyrinthianWorld03;ShadowgreenCavernWorld;CWTestHold;3DNPCGabaniasWorld;SnowThroatWorld;TOKMountainPassWorld;zAoMVigilantWorld;zAoMWitchWorld;zCHColosseumWorld;zCHWasteland;zCHWhaleGraceyardWorld;zCOCursedWorld"
 
 ########################################################################################################################
 #   Only pregenerate world spaces                                                                                      #
@@ -219,4 +219,4 @@ OnlyPregenerateWorldSpaces = ""
 #    Type: (int32)                                                                                                     #
 ########################################################################################################################
 
-DynDOLODGrassMode = 0
+DynDOLODGrassMode = 1

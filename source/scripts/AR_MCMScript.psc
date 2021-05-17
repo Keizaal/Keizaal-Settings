@@ -26,11 +26,17 @@ GlobalVariable Property AR_deadfriends Auto
 GlobalVariable Property AR_Books Auto
 GlobalVariable Property AR_stones Auto
 GlobalVariable Property AR_PickUpBooks Auto
-Actor Property PlayerRef Auto
-Idle Property IdleStop_Loose Auto
+GlobalVariable Property AR_PickUpAngles Auto
+GlobalVariable Property AR_SlowChest Auto
+GlobalVariable Property AR_ReturnTo1st Auto 
 GlobalVariable Property AR_dummys Auto
 GlobalVariable Property AR_NoFirstPerson Auto
 GlobalVariable Property AR_DisplayMessages Auto
+GlobalVariable Property AR_welltimed Auto
+GlobalVariable Property AR_puzzles Auto
+
+Actor Property PlayerRef Auto
+Idle Property IdleStop_Loose Auto
 
 int bards_B
 int firewood_B
@@ -61,20 +67,27 @@ int newdog
 int newhorse
 int dummy_B
 int displaymessages_b
+int Angles_B 
+int Slowcontainers_B 
+int harvestanimal
+int clearfromlist
+int returnto1st_b
+int welltimed_b
+int Puzzles_b
 
 bool bards_Toggle = True
 bool firewood_Toggle = False
 bool kegs_Toggle = False
 bool Looting_Toggle = True
 bool PetDog_Toggle = True
-bool pickpocket_Toggle = False 
+bool pickpocket_Toggle = True 
 bool putoutfire_Toggle = False
 bool salutechildren_Toggle = False
 bool salutecommanders_Toggle = True
 bool saluteguards_Toggle = True
 bool shrines_Toggle = True
 bool souls_Toggle = False
-bool doors_Toggle = False
+bool doors_Toggle = True
 bool deadNPCs_Toggle = True
 bool deadanimals_Toggle = True 
 bool deadfriends_Toggle = True
@@ -88,9 +101,15 @@ bool stones_Toggle = True
 bool pickupbooks_Toggle = False
 bool dummy_Toggle = False
 bool displaymessages_Toggle = False
+bool angles_Toggle = True
+bool slowcontainers_Toggle = True
+bool returnto1st_toggle = true
+bool welltimed_toggle = false
+bool puzzles_toggle = true
 
 formlist property ar_moddeddogs auto
 formlist property ar_moddedhorses auto
+formlist property AR_Interact_CustomDeadAnimals auto
 
 int slowalchemy_M
 string slowalchemy
@@ -115,7 +134,7 @@ event OnInit()
 	SlowAlchemyList[2] = "Always Quick"
 
 	CameList = new string[3]
-	CameList[0] = "Always Play Animations"
+	CameList[0] = "1st & 3rd - IFPV installed"
 	CameList[1] = "No 1st  Person (Default)"
 	CameList[2] = "Force 3rd Person"
 EndEvent
@@ -130,18 +149,18 @@ Event OnPageReset(string page)
 If (page == "Settings")
 SetCursorFillMode(LEFT_TO_RIGHT)
 
-Actor crosshairActor = Game.GetCurrentCrosshairRef() as Actor
-
-If Game.GetFormFromFile(0x02001827, "SimplyKnock.esp") == none
-Looting_Toggle = False
+If Game.GetFormFromFile(0x042474B7, "Wintersun - Faiths of Skyrim.esp")
+shrines_Toggle = False
+AR_shrines.SetValue(0)
 endif
+
 
 AddHeaderOption("General")
 AddEmptyOption()
 Came_M = AddMenuOption("Camera Mode", CameList[CameIndex])
 Souls_B = AddToggleOption("Unpaused Menus Support", Souls_Toggle)
 Unstuckme = AddTextOption("Unstuck Me!", "")
-AddEmptyOption()
+returnto1st_b = AddToggleOption("Return to 1st Person", returnto1st_Toggle)
 AddEmptyOption()
 AddEmptyOption()
 AddHeaderOption("Animations")
@@ -154,21 +173,36 @@ SaluteJarls_B = AddToggleOption("Salute Jarls", SaluteJarls_Toggle)
 SaluteGuards_B = AddToggleOption("Salute Guards", SaluteGuards_Toggle)
 SaluteChildren_B = AddToggleOption("Wave to Children", SaluteChildren_Toggle)
 SaluteCommanders_B = AddToggleOption("Salute Generals", SaluteCommanders_Toggle)
-Looting_B = AddToggleOption("Simply Knock Support", Looting_Toggle)
-;Not a bug, Looting used to be something else, now takes care of Simply Knock.
-Doors_B = AddToggleOption("Open Doors", Doors_Toggle)
+Doors_B = AddToggleOption("Open Doors/Containers", Doors_Toggle)
+takeitems_B = AddToggleOption("Pick Up Items", takeitems_Toggle)
+SlowContainers_B = AddToggleOption("Realistic Container Animations", SlowContainers_Toggle)
+Angles_B = AddToggleOption("Pick Up Detection for High/Low Objects", angles_Toggle)
+
+If Game.GetFormFromFile(0x02001827, "SimplyKnock.esp") == none
+Looting_Toggle = False
+endif
+
 deadanimals_B = AddToggleOption("Loot Animals", deadanimals_Toggle)
 deadNPCs_B = AddToggleOption("Loot NPCs", deadNPCs_Toggle)
 pickpocket_B = AddToggleOption("Pickpocket", Pickpocket_Toggle)
-takeitems_B = AddToggleOption("Pick Up Items", takeitems_Toggle)
 PetHorse_B = AddToggleOption("Pet Horses", PetHorse_Toggle)
 PetDog_B = AddToggleOption("Pet Dogs", PetDog_Toggle)
 HugFollower_B = AddToggleOption("Interact with Followers", HugFollower_Toggle)
 HugSpouse_B = AddToggleOption("Interact with Spouse", HugSpouse_Toggle)
 deadfriends_B = AddToggleOption("Mourn Dead Friends", deadfriends_Toggle)
 stones_B = AddToggleOption("Touch Standing Stones", stones_Toggle)
+Looting_B = AddToggleOption("Simply Knock Support", Looting_Toggle)
+;Not a bug, Looting used to be something else, now takes care of Simply Knock.
+puzzles_B = AddToggleOption("Interact with Puzzles", puzzles_Toggle)
+welltimed_B = AddToggleOption("Well Timed Pick-Up (Beta)", welltimed_Toggle)
+
 AddEmptyOption()
 AddEmptyOption()
+AddEmptyOption()
+AddEmptyOption()
+
+Actor crosshairActor = Game.GetCurrentCrosshairRef() as Actor
+
 AddHeaderOption("Special Interactions")
 AddEmptyOption()
 Firewood_B = AddToggleOption("Interact with Woodpiles", firewood_Toggle)
@@ -184,8 +218,22 @@ If crosshairActor && !crosshairActor.isdead()
 					newdog = AddTextOption("Add to Small Pet List", "No Target", OPTION_FLAG_DISABLED)
 					newhorse = AddTextOption("Add to Big Pet List", "No Target", OPTION_FLAG_DISABLED)
 					Endif
+
+If crosshairActor && crosshairActor.isdead() 
+harvestanimal = AddTextOption("Add to Animal Harvest List", crosshairActor.GetDisplayName())
+Else
+harvestanimal = AddTextOption("Add to Animal Harvest List", "No Target", OPTION_FLAG_DISABLED)
+endif
+
+If crosshairActor 
+ClearfromList =  AddTextOption("Clear From Lists", crosshairActor.GetDisplayName())
+Else
+ClearfromList = AddTextOption("Clear From Lists", "No Target", OPTION_FLAG_DISABLED)
+endif
+
 Endif
 EndEvent
+
 
 event OnOptionMenuOpen(int option)
 	if (option == SlowAlchemy_M)
@@ -234,12 +282,33 @@ event OnOptionSelect(int option)
 Actor crosshairActor = Game.GetCurrentCrosshairRef() as Actor
 
 If option == newdog
-ShowMessage(crosshairActor.GetDisplayName()+" added to the list of small pettable animals!.")
+ShowMessage(crosshairActor.GetDisplayName()+" added to the list of small pettable animals.")
 ar_moddeddogs.AddForm(crosshairActor.GetActorBase())
 
 elseif option == newhorse
 ShowMessage(crosshairActor.GetDisplayName()+" added to the list of tall pettable animals.")
 ar_moddedhorses.AddForm(crosshairActor.GetActorBase())
+
+elseif option == harvestanimal
+ShowMessage(crosshairActor.GetDisplayName()+" will now play the 'harvest animal' animation.")
+AR_Interact_CustomDeadAnimals.AddForm(crosshairActor.GetActorBase())
+
+elseif option == ClearfromList
+ShowMessage(crosshairActor.GetDisplayName()+" has been cleared from all lists.")
+AR_Interact_CustomDeadAnimals.RemoveAddedForm(crosshairActor.GetActorBase())
+ar_moddedhorses.RemoveAddedForm(crosshairActor.GetActorBase())
+ar_moddeddogs.RemoveAddedForm(crosshairActor.GetActorBase())
+
+
+elseif (option == Returnto1st_B) && Returnto1st_Toggle == True
+		Returnto1st_Toggle = False
+		SetToggleOptionValue(Returnto1st_B, Returnto1st_Toggle)
+		AR_Returnto1st.SetValue(0)
+	elseif (option == Returnto1st_B) && Returnto1st_Toggle == False
+		Returnto1st_Toggle = True
+		SetToggleOptionValue(Returnto1st_B, Returnto1st_Toggle)
+		AR_Returnto1st.SetValue(1)
+
 
 elseif (option == Souls_B) && Souls_Toggle == True
 		Souls_Toggle = False
@@ -249,6 +318,15 @@ elseif (option == Souls_B) && Souls_Toggle == True
 		Souls_Toggle = True
 		SetToggleOptionValue(Souls_B, Souls_Toggle)
 		AR_SkyrimSouls.SetValue(1)
+
+elseif (option == puzzles_B) && puzzles_Toggle == True
+		puzzles_Toggle = False
+		SetToggleOptionValue(puzzles_B, puzzles_Toggle)
+		AR_puzzles.SetValue(0)
+	elseif (option == puzzles_B) && puzzles_Toggle == False
+		puzzles_Toggle = True
+		SetToggleOptionValue(puzzles_B, puzzles_Toggle)
+		AR_puzzles.SetValue(1)
 
 	elseif option == unstuckme
 	ShowMessage("Attempting to unstuck player animation. Exit Menu Now. -  If it doesn't work, try pressing the JUMP key.")
@@ -476,6 +554,24 @@ elseif (option == PickUpBooks_B) && PickUpBooks_Toggle == True
 		SetToggleOptionValue(PickUpBooks_B, PickUpBooks_Toggle)
 		AR_PickUpBooks.SetValue(1)
 
+elseif (option == Angles_B) && Angles_Toggle == True
+		Angles_Toggle = False
+		SetToggleOptionValue(Angles_B, Angles_Toggle)
+		AR_PickUpAngles.SetValue(0)
+	elseif (option == Angles_B) && Angles_Toggle == False
+		PickUpBooks_Toggle = True
+		SetToggleOptionValue(Angles_B, Angles_Toggle)
+		AR_PickUpAngles.SetValue(1)
+
+elseif (option == slowcontainers_B) && slowcontainers_Toggle == True
+		slowcontainers_Toggle = False
+		SetToggleOptionValue(slowcontainers_B, slowcontainers_Toggle)
+		AR_SlowChest.SetValue(0)
+	elseif (option == slowcontainers_B) && slowcontainers_Toggle == False
+		slowcontainers_Toggle = True
+		SetToggleOptionValue(slowcontainers_B, slowcontainers_Toggle)
+		AR_SlowChest.SetValue(1)
+
 elseif (option == Dummy_B) && Dummy_Toggle == True
 		Dummy_Toggle = False
 		SetToggleOptionValue(Dummy_B, Dummy_Toggle)
@@ -484,15 +580,25 @@ elseif (option == Dummy_B) && Dummy_Toggle == True
 		Dummy_Toggle = True
 		SetToggleOptionValue(Dummy_B, Dummy_Toggle)
 		AR_Dummys.SetValue(1)
+
+elseif (option == welltimed_B) && welltimed_Toggle == True
+		welltimed_Toggle = False
+		SetToggleOptionValue(welltimed_B, welltimed_Toggle)
+		AR_welltimed.SetValue(0)
+	elseif (option == welltimed_B) && welltimed_Toggle == False
+		welltimed_Toggle = True
+		SetToggleOptionValue(welltimed_B, welltimed_Toggle)
+		AR_welltimed.SetValue(1)
+
 endif
 
 endevent
 
 event OnOptionHighlight(int option) 
 if (option == SlowAlchemy_M) 
-SetInfoText("This affects the harvesting of ingredients. Default is Skill-Based, which means the animation\nwill be slow in the beginning and get faster as you improve your alchemy skills.") 
+SetInfoText("The default animation is Skill-Based, which means the animation will be slow in the beginning and\nget faster as you learn more and improve your alchemy skills.") 
 elseif (option == Came_M) 
-SetInfoText("How to deal with 1st person animations. If using Immersive First Person View, choose All Animations.\nOtherwise, decide between NO first person animations or FORCED third person camera")
+SetInfoText("How to deal with 1st person animations. If you want animations in 1st person, make sure you install\nImmersive First Person View. Otherwise, decide between NO 1st person animations or FORCED 3rd person camera")
 elseif (option == Bards_B)
 SetInfoText("Detects when a bard is playing music and\nyou will applaud their performance upon activation. Default: On.") 
 elseif (option == Firewood_B)
@@ -514,7 +620,7 @@ SetInfoText("If you have joined the Imperials or Stormcloaks,\nyou will salute y
 elseif (option == saluteguards_B)
 SetInfoText("If you are a thane of their hold,\nmost guards will greet you respectfully. Default: On")
 elseif (option == shrines_B)
-SetInfoText("Pray at shrines when you activate them.\nDefault: On")
+SetInfoText("Pray at shrines when you activate them.\nIf you have Wintersun installed, this is automatically turned OFF. Default: On")
 elseif (option == Souls_B)
 SetInfoText("If you are using Skyrim Souls, tick\nthis box for extra compatibility. Default: Off")
 elseif (option == doors_B)
@@ -551,5 +657,17 @@ elseif (option == dummy_b)
 SetInfoText("Holding E (or activation key) for longer than one second near a training dummy\nwill play a boxing animation and give you a small buff. Default: On")
 elseif (option == DisplayMessages_b)
 SetInfoText("When you attempt to perform a special interaction\nbut there's no supported items nearby, a warning message will be displayed. Default: On")
+elseif (option == angles_b)
+SetInfoText("Requires having 'Pick Up Items' enabled. When an object is on the floor, your character is standing\nand you activate the item, a different (slower but realistic) animation will play. Default: On")
+elseif (option == slowcontainers_b)
+SetInfoText("Requires having 'Doors/Containers' enabled. With this option, looting a container will play different animations.\nThese are slower than the default, but more realistic. Default: On")
+elseif (option == DisplayMessages_b)
+SetInfoText("When you attempt to perform a special interaction\nbut there's no supported items nearby, a warning message will be displayed. Default: On")
+elseif (option == Returnto1st_b)
+SetInfoText("If you are using 'Force 3rd person' camera mode, ticking this option will return you\nto first person once the animation is done. Otherwise it has no effect. Default: On")
+elseif (option == welltimed_b)
+SetInfoText("Enabling this will sync the picking animation with the object disappearing.\nMostly fine, but it can cause incompatibilities with stacked items or certain mods like Blocksteal. Default: Off")
+elseif (option == puzzles_b)
+SetInfoText("Pulling chains, moving puzzle pillars, claw puzzle doors. barred doors and more\nwill now play an animation when interacted. Default: On")
 endif
 endevent
