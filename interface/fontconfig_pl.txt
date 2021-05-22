@@ -1,6 +1,6 @@
 ; Font Libraries
 ;;;;;;;;;;;;;;;;
-fontlib "Interface\fonts_en.swf";  Default font matching language
+fontlib "Interface\fonts_pl.swf";  Default font matching language
 fontlib "Interface\fonts_console.swf"; Default font
 fontlib "Interface\fonts_12thcentury.swf"
 fontlib "Interface\fonts_2peassketchy.swf"
@@ -284,7 +284,11 @@ map "$CClub_Font"					= "Eurostile LT Std" Roman
 map "$CClub_Font_Bold"				= "Eurostile LT Std" Demi
 map "ControllerButtons"				= "Controller  Buttons" Normal
 map "ControllerButtonsInverted"		= "Controller  Buttons inverted" Normal
+map "$CClub_Font"					= "Eurostile LT Std" Roman
+map "$CClub_Font_Bold"				= "Eurostile LT Std" Demi
+map "ControllerButtons"				= "Controller  Buttons" Normal
+map "ControllerButtonsInverted"		= "Controller  Buttons inverted" Normal
 
 ; Valid Character Range
 ;;;;;;;;;;;;;;;;;;;;;;;
-validNameChars "`1234567890-=~!@#$%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\\asdfghjkl;'zxcvbnm<>?|¡¢£¤¥¦§¨©ª«®¯°²³´¶·¸¹º»¼½¾¿ÄÀÁÂÃÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ ÿ "
+validNameChars " `1234567890-=~!@#$%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\\asdfghjkl;'zxcvbnm<>?|ЎўЈ¤Ґ¦§Ё©Є«®Ї°Ііґ¶·ё№є»јЅѕїĄąĆćĘęŁłŃńÓóŚśŹźŻżÁáČčĎďÉéĚěÍíŇňÓóŘřŠšŤťÚúŮůÝýŽž"
