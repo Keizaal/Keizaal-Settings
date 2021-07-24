@@ -74,6 +74,8 @@ int clearfromlist
 int returnto1st_b
 int welltimed_b
 int Puzzles_b
+int restore
+int newcat
 
 bool bards_Toggle = True
 bool firewood_Toggle = False
@@ -106,10 +108,19 @@ bool slowcontainers_Toggle = True
 bool returnto1st_toggle = true
 bool welltimed_toggle = false
 bool puzzles_toggle = true
+bool missiveAlreadydetected  = false
+bool boardalreadydetected = false
 
 formlist property ar_moddeddogs auto
 formlist property ar_moddedhorses auto
 formlist property AR_Interact_CustomDeadAnimals auto
+formlist property AR_Interact_MissiveBoard Auto
+formlist property AR_Interact_AlreadyUsed Auto
+formlist property AR_Interact_smalldogs Auto
+
+form missives
+form noticeboard1
+form noticeboard2
 
 int slowalchemy_M
 string slowalchemy
@@ -154,6 +165,25 @@ shrines_Toggle = False
 AR_shrines.SetValue(0)
 endif
 
+If SKSE.GetPluginVersion("Skyrim Souls RE") > -1
+Debug.notification(SKSE.GetPluginVersion("SkyrimSoulsRE"))
+Souls_Toggle = True
+AR_SkyrimSouls.SetValue(1)
+Endif
+
+If missiveAlreadydetected == false && Game.GetFormFromFile(0x020012CB, "Missives.esp")
+AR_Interact_MissiveBoard.AddForm( Game.GetFormFromFile(0x020012CB, "Missives.esp"))
+missiveAlreadydetected = True
+endif
+
+If boardalreadydetected == false && Game.GetFormFromFile(0x03001D91, "notice board.esp")
+noticeboard1 = Game.GetFormFromFile(0x03001D91, "notice board.esp")  as Container
+noticeboard2 = Game.GetFormFromFile(0x03009FA4, "notice board.esp")  as Container
+boardalreadydetected = True
+AR_Interact_MissiveBoard.AddForm(noticeboard1)
+AR_Interact_MissiveBoard.AddForm(noticeboard2 )
+endif
+
 
 AddHeaderOption("General")
 AddEmptyOption()
@@ -195,9 +225,6 @@ Looting_B = AddToggleOption("Simply Knock Support", Looting_Toggle)
 ;Not a bug, Looting used to be something else, now takes care of Simply Knock.
 puzzles_B = AddToggleOption("Interact with Puzzles", puzzles_Toggle)
 welltimed_B = AddToggleOption("Well Timed Pick-Up (Beta)", welltimed_Toggle)
-
-AddEmptyOption()
-AddEmptyOption()
 AddEmptyOption()
 AddEmptyOption()
 
@@ -212,10 +239,12 @@ PickUpBooks_B = AddToggleOption("Interact with Straw Bales", PickUpBooks_Toggle)
 Dummy_B = AddToggleOption("Training Dummy (Boxing) ", Dummy_Toggle)
 DisplayMessages_B = AddToggleOption("Show Warning If Interaction Fails", DisplayMessages_Toggle)
 If crosshairActor && !crosshairActor.isdead() 
-					newdog = AddTextOption("Add to Small Pet List", crosshairActor.GetDisplayName())
+					newdog = AddTextOption("Add to Regular Pet List", crosshairActor.GetDisplayName())
+					newcat = AddTextOption("Add to Small Pet List", crosshairActor.GetDisplayName())
 					newhorse = AddTextOption("Add to Big Pet List", crosshairActor.GetDisplayName())
 						Else
-					newdog = AddTextOption("Add to Small Pet List", "No Target", OPTION_FLAG_DISABLED)
+					newdog = AddTextOption("Add to Regular Pet List", "No Target", OPTION_FLAG_DISABLED)
+					newcat = AddTextOption("Add to Small Pet List", "No Target", OPTION_FLAG_DISABLED)
 					newhorse = AddTextOption("Add to Big Pet List", "No Target", OPTION_FLAG_DISABLED)
 					Endif
 
@@ -230,6 +259,8 @@ ClearfromList =  AddTextOption("Clear From Lists", crosshairActor.GetDisplayName
 Else
 ClearfromList = AddTextOption("Clear From Lists", "No Target", OPTION_FLAG_DISABLED)
 endif
+
+Restore = AddTextOption("Restore Used/Disabled Items", "")
 
 Endif
 EndEvent
@@ -282,8 +313,12 @@ event OnOptionSelect(int option)
 Actor crosshairActor = Game.GetCurrentCrosshairRef() as Actor
 
 If option == newdog
-ShowMessage(crosshairActor.GetDisplayName()+" added to the list of small pettable animals.")
+ShowMessage(crosshairActor.GetDisplayName()+" added to the list of regular-sized pettable animals.")
 ar_moddeddogs.AddForm(crosshairActor.GetActorBase())
+
+elseif option == newcat
+ShowMessage(crosshairActor.GetDisplayName()+" added to the list of small pettable animals.")
+AR_Interact_smalldogs.AddForm(crosshairActor.GetActorBase())
 
 elseif option == newhorse
 ShowMessage(crosshairActor.GetDisplayName()+" added to the list of tall pettable animals.")
@@ -298,6 +333,8 @@ ShowMessage(crosshairActor.GetDisplayName()+" has been cleared from all lists.")
 AR_Interact_CustomDeadAnimals.RemoveAddedForm(crosshairActor.GetActorBase())
 ar_moddedhorses.RemoveAddedForm(crosshairActor.GetActorBase())
 ar_moddeddogs.RemoveAddedForm(crosshairActor.GetActorBase())
+AR_Interact_smalldogs.RemoveAddedForm(crosshairActor.GetActorBase())
+
 
 
 elseif (option == Returnto1st_B) && Returnto1st_Toggle == True
@@ -337,6 +374,13 @@ Utility.Wait(0.2)
 playerRef.PlayIdle(IdleStop_Loose)
 Game.enableplayercontrols()
 playerRef.SetDontMove(false)
+
+	elseif option == restore
+	ShowMessage("Restoring all used items - Exit Menu.")
+	Utility.Wait(2)
+		AnythingToEnable()
+		Debug.notification("Finished restoring used items!")
+
 
 elseif (option == Books_B) && Books_Toggle == True
 		Books_Toggle = False
@@ -559,7 +603,7 @@ elseif (option == Angles_B) && Angles_Toggle == True
 		SetToggleOptionValue(Angles_B, Angles_Toggle)
 		AR_PickUpAngles.SetValue(0)
 	elseif (option == Angles_B) && Angles_Toggle == False
-		PickUpBooks_Toggle = True
+		Angles_Toggle = True
 		SetToggleOptionValue(Angles_B, Angles_Toggle)
 		AR_PickUpAngles.SetValue(1)
 
@@ -646,11 +690,13 @@ SetInfoText("Activating a book or note from your inventory will play a reading a
 elseif (option == unstuckme)
 SetInfoText("If for some reason your character is stuck performing\nan animation, this should unstuck them.")
 elseif (option == stones_B)
-SetInfoText("This will make you touch the standing stones\nbriefly before activating them. Default: On")
+SetInfoText("This will make you touch the standing stones\nbriefly before activating them. This must be activated for the custom Missives/Board support. Default: On")
 elseif (option == pickupbooks_B)
 SetInfoText("Interact with straw bales, allowing you to get straw out ot them.\nRequires holding E near of them. Default: On")
 elseif (option == newdog)
-SetInfoText("Some modded small animals like cats or custom dogs might not be recognized automatically.\nYou can make them pettable by using this option.")
+SetInfoText("Some modded dogs might not be recognized automatically.\nYou can make them pettable by using this option. Normal size dog.")
+elseif (option == newcat)
+SetInfoText("Some modded small dogs or cats might not be recognized automatically.\nYou can make them pettable by using this option. Small sized animals.")
 elseif (option == newhorse)
 SetInfoText("Some modded tall animals like custom horses might not be recognized automatically.\nYou can make them pettable by using this option.")
 elseif (option == dummy_b)
@@ -669,5 +715,23 @@ elseif (option == welltimed_b)
 SetInfoText("Enabling this will sync the picking animation with the object disappearing.\nMostly fine, but it can cause incompatibilities with stacked items or certain mods like Blocksteal. Default: Off")
 elseif (option == puzzles_b)
 SetInfoText("Pulling chains, moving puzzle pillars, claw puzzle doors. barred doors and more\nwill now play an animation when interacted. Default: On")
+elseif (option == restore)
+SetInfoText("You can re-enable used items (like woodpiles or fires) using this option.\nThe option affects ALL the special items you have interacted with via this mod.")
+elseif (option == clearfromlist)
+SetInfoText("If you made a mistake assigning the type of animal (small, normal, big or harvestable)\nyou can clear them from their current classification by clicking here.")
 endif
 endevent
+
+function AnythingToEnable()
+
+;While 0 < AR_Interact_AlreadyUsed.GetSize()
+ObjectReference MyItem = AR_Interact_AlreadyUsed.GetAt(0) as ObjectReference
+If MyItem == None
+; You're done!
+else
+MyItem.Enable()
+AR_Interact_AlreadyUsed.RemoveAddedForm(MyItem)
+AnythingToEnable()
+endif
+
+endfunction
