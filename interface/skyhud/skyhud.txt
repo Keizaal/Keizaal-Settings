@@ -54,7 +54,7 @@ bPersistentClock=0
 
 bAltArrow=1
 bAltCompass=1
-bDotCrosshair=1
+bDotCrosshair=0
 bAltHealth=0
 bAltStamina=0
 bAltCharge=0
