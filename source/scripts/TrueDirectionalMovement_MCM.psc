@@ -72,6 +72,9 @@ Event OnConfigInit()
 	TrueDirectionalMovement.SetDialogueMode(0)
 	SetMenuOptionValueST(_dialogueModeNames[0])
 
+	TrueDirectionalMovement.SetWidgetHideVanillaTargetBar(false)
+	SetToggleOptionValueST(false)
+
 EndEvent
 
 

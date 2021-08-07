@@ -121,7 +121,7 @@
     "localScalarRate": 1.0,
     "maxArrowPredictionRange": 4000.0,
     "maxCameraFollowRate": 1.0,
-    "minCameraFollowDistance": 64.0,
+    "minCameraFollowDistance": 170.0,
     "minCameraFollowRate": 1.0,
     "modDisabled": false,
     "modToggleKey": -1,
