@@ -163,7 +163,7 @@
     "separateZMaxSmoothingDistance": 60.0,
     "separateZMinFollowRate": 0.25,
     "separateZScalar": 13,
-    "shoulderSwapKey": 258,
+    "shoulderSwapKey": 37,
     "sitting": {
         "combatMagicFOVOffset": 0.0,
         "combatMagicSideOffset": 20.0,

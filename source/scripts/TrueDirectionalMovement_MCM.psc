@@ -75,6 +75,9 @@ Event OnConfigInit()
 	TrueDirectionalMovement.SetWidgetHideVanillaTargetBar(false)
 	SetToggleOptionValueST(false)
 
+	TrueDirectionalMovement.SetTargetLockKey(258)
+	SetKeymapOptionValueST(258)
+
 EndEvent
 
 

@@ -252,7 +252,7 @@ int KillmoveStealthSittingKillsOID
 
 ;--States--
 
-int PerspectiveListIndex = 0
+int PerspectiveListIndex = 6
 int KillmoveListIndex = 1
 int KillmoveChance = 100
 int DecapitationListIndex = 1
