@@ -78,6 +78,8 @@ Event OnConfigInit()
 	TrueDirectionalMovement.SetTargetLockKey(258)
 	SetKeymapOptionValueST(258)
 
+	TrueDirectionalMovement.SetFreeCamera(false)
+
 EndEvent
 
 
