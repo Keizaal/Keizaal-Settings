@@ -1,0 +1,22 @@
+{
+	"whiteListedWorldSpaces": [
+		{
+			"name": "Blackreach",
+			"editorID": "Blackreach",
+			"markerHeight": 180000,
+			"enabled": true
+		},
+		{
+			"name": "Sovngarde",
+			"editorID": "Sovngarde",
+			"markerHeight": 180000,
+			"enabled": true
+		},
+		{
+			"name": "Forgotten Vale",
+			"editorID": "DLC01FalmerValley",
+			"markerHeight": 180000,
+			"enabled": true
+		}
+	]
+}
