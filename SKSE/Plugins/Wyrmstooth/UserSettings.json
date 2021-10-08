@@ -1,0 +1,11 @@
+{
+	"MainQuestSelection" : 4,
+	"WTAutosaveGlobal" : 1,
+	"WTBossHealth" : 1,
+	"WTBossHealthScaleAmount" : 20,
+	"WTDraugrSwarmGlobal" : 1,
+	"WTFaelorDialogueFix" : 0,
+	"WTShowQuestMarkers" : 1,
+	"WTStartLevel" : 20,
+	"WTStartNotify" : 0
+}
