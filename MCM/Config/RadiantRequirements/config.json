@@ -1,0 +1,144 @@
+{
+  "modName": "RadiantRequirements",
+  "displayName": "Radiant Requirements",
+  "customContent": {
+    "source": "RadiantRequirements/RR_splash.dds",
+    "x": 151,
+    "y": 163
+  },
+  "pages": [
+    {
+      "pageDisplayName": "$Settings",
+      "content": [
+        {
+          "text": "$Location Type",
+          "type": "header"
+        },
+        {
+          "type": "empty"
+        },
+        {
+          "id": "iDragon:MinLevel",
+          "text": "$Dragon Lair",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iDragonPriest:MinLevel",
+          "text": "$Dragon Priest Lair",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iDraugr:MinLevel",
+          "text": "$Draugr Crypt",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iFalmer:MinLevel",
+          "text": "$Falmer Hive",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iForsworn:MinLevel",
+          "text": "$Forsworn Camp",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iGiant:MinLevel",
+          "text": "$Giant Camp",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iHagraven:MinLevel",
+          "text": "$Hagraven Nest",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iSpriggan:MinLevel",
+          "text": "$Spriggan Grove",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iVampire:MinLevel",
+          "text": "$Vampire Lair",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iWarlock:MinLevel",
+          "text": "$Warlock Lair",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        },
+        {
+          "id": "iWerewolf:MinLevel",
+          "text": "$Werewolf Lair",
+          "type": "slider",
+          "valueOptions": {
+            "sourceType": "ModSettingInt",
+            "min": 1,
+            "max": 100,
+            "step": 1
+          }
+        }
+      ]
+    }
+  ]
+}
