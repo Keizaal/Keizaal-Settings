@@ -1,6 +1,6 @@
 {
 	"IGClockAlignmentIndex" : 2,
-	"IGClockControlModeIndex" : 2,
+	"IGClockControlModeIndex" : 0,
 	"IGClockDisplayTime" : 1,
 	"IGClockHotkey" : 45,
 	"IGClockPeriodIndex" : 2,
@@ -13,7 +13,7 @@
 	"IGClockXOffset" : -110,
 	"IGClockYOffset" : -3,
 	"IGDateAlignmentIndex" : 2,
-	"IGDateControlModeIndex" : 2,
+	"IGDateControlModeIndex" : 0,
 	"IGDateDisplayTime" : 1,
 	"IGDateFormatIndex" : 5,
 	"IGDateHotkey" : 45,
