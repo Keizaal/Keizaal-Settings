@@ -1,0 +1,1192 @@
+{
+    "modName": "TrueDirectionalMovement",
+    "displayName": "True Directional Movement",
+    "minMcmVersion": 11,
+    "cursorFillMode": "topToBottom",
+    "pages": [{                         
+        "pageDisplayName": "$TrueDirectionalMovement_GeneralPage",
+        "cursorFillMode": "topToBottom",
+        "content": [
+            {
+                "text": "$TrueDirectionalMovement_GeneralSettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "bDirectionalMovementSheathed:General",
+                "text": "$TrueDirectionalMovement_DirectionalMovementSheathed_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_DirectionalMovementSheathed_InfoText",
+                "groupControl": 1,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bDirectionalMovementDrawn:General",
+                "text": "$TrueDirectionalMovement_DirectionalMovementDrawn_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_DirectionalMovementDrawn_InfoText",
+                "groupControl": 2,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "uDialogueMode:General",
+                "text": "$TrueDirectionalMovement_DialogueMode_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_DialogueMode_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_DialogueMode_Disable",
+                        "$TrueDirectionalMovement_DialogueMode_Normal",
+                        "$TrueDirectionalMovement_DialogueMode_FaceSpeaker"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "fMeleeMagnetismAngle:General",
+                "text": "$TrueDirectionalMovement_MeleeMagnetismAngle_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_MeleeMagnetismAngle_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0,
+                    "max": 180,
+                    "step": 5,
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bFaceCrosshairWhileAttacking:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_FaceCrosshairWhileAttacking_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_FaceCrosshairWhileAttacking_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bFaceCrosshairWhileShouting:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_FaceCrosshairWhileShouting_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_FaceCrosshairWhileShouting_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bFaceCrosshairWhileBlocking:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_FaceCrosshairWhileBlocking_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_FaceCrosshairWhileBlocking_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bFaceCrosshairDuringAutoMove:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_FaceCrosshairDuringAutoMove_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_FaceCrosshairDuringAutoMove_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bStopOnDirectionChange:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_StopOnDirectionChange_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_StopOnDirectionChange_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_Headtracking_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "bHeadtracking:Headtracking",
+                "text": "$TrueDirectionalMovement_Headtracking_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_Headtracking_InfoText",
+                "groupControl": 3,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bHeadtrackSpine:Headtracking",
+                "text": "$TrueDirectionalMovement_HeadtrackSpine_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_HeadtrackSpine_InfoText",
+                "groupCondition": 3,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fDialogueHeadtrackingDuration:Headtracking",
+                "text": "$TrueDirectionalMovement_DialogueHeadtrackingDuration_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_DialogueHeadtrackingDuration_InfoText",
+                "groupCondition": 3,
+                "valueOptions": {
+                    "min": 0.5,
+                    "max": 10.0,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bCameraHeadtracking:Headtracking",
+                "text": "$TrueDirectionalMovement_CameraHeadtracking_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_CameraHeadtracking_InfoText",
+                "groupCondition": 3,
+                "groupControl": 19,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fCameraHeadtrackingStrength:Headtracking",
+                "text": "$TrueDirectionalMovement_CameraHeadtrackingStrength_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_CameraHeadtrackingStrength_InfoText",
+                "groupCondition": {"AND": [3, 19]},
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 2.0,
+                    "step": 0.01,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fCameraHeadtrackingDuration:Headtracking",
+                "text": "$TrueDirectionalMovement_CameraHeadtrackingDuration_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_CameraHeadtrackingDuration_InfoText",
+                "groupCondition": {"AND": [3, 19]},
+                "valueOptions": {
+                    "min": 0.0,
+                    "max": 10.0,
+                    "step": 0.1,
+                    "formatString": "{1} s",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "uCameraHeadtrackingMode:Headtracking",
+                "text": "$TrueDirectionalMovement_CameraHeadtrackingMode_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_CameraHeadtrackingMode_InfoText",
+                "groupCondition": {"AND": [3, 19]},
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_CameraHeadtrackingMode_Disable",
+                        "$TrueDirectionalMovement_CameraHeadtrackingMode_Normal",
+                        "$TrueDirectionalMovement_CameraHeadtrackingMode_FaceCamera"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_DirectionalMovement_HeaderText",
+                "type": "header",
+                "position": 1
+            },
+            {
+                "id": "fRunningRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_RunningRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_RunningRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 5.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fSprintingRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_SprintingRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_SprintingRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 5.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fAttackStartRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_AttackStartRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_AttackStartRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.0,
+                    "max": 20.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fAttackMidRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_AttackMidRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_AttackMidRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.0,
+                    "max": 4.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fAttackEndRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_AttackEndRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_AttackEndRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.0,
+                    "max": 4.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fAirRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_AirRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_AirRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.0,
+                    "max": 1.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fWaterRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_WaterRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WaterRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 1.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fSwimmingRotationSpeedMult:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_SwimmingRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_SwimmingRotationSpeedMult_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 2.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fFaceCrosshairRotationSpeedMultiplier:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_FaceCrosshairRotationSpeedMult_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_FaceCrosshairRotationSpeedMult_InfoText",
+                "groupCondition": {"AND": [{"NOT": 4}, {"OR": [1, 2]}]},
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 5.0,
+                    "step": 0.05,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bFaceCrosshairInstantly:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_FaceCrosshairInstantly_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_FaceCrosshairInstantly_InfoText",
+                "groupCondition": [1, 2],
+                "groupControl": 4,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bDisableAttackRotationMultipliersForTransformations:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_DisableAttackRotationMultipliersForTransformations_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_DisableAttackRotationMultipliersForTransformations_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fSwimmingPitchSpeed:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_SwimmingPitchSpeed_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_SwimmingPitchSpeed_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "min": 1.0,
+                    "max": 10.0,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bThumbstickBounceFix:DirectionalMovement",
+                "text": "$TrueDirectionalMovement_ThumbstickBounceFix_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_ThumbstickBounceFix_InfoText",
+                "groupCondition": [1, 2],
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            }
+        ]
+    },
+    {
+        "pageDisplayName": "$TrueDirectionalMovement_TargetLockPage",
+        "cursorFillMode": "topToBottom",
+        "content": [
+            {
+                "text": "$TrueDirectionalMovement_TargetLockSettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "bAutoTargetNextOnDeath:TargetLock",
+                "text": "$TrueDirectionalMovement_AutoTargetNextOnDeath_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_AutoTargetNextOnDeath_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bTargetLockTestLOS:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockTestLOS_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_TargetLockTestLOS_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bTargetLockHostileActorsOnly:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockHostileActorsOnly_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_TargetLockHostileActorsOnly_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bTargetLockHideCrosshair:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockHideCrosshair_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_TargetLockHideCrosshair_OptionText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fTargetLockDistance:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockDistance_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockDistance_InfoText",
+                "valueOptions": {
+                    "min": 100,
+                    "max": 8000,
+                    "step": 10,
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fTargetLockDistanceMultiplierSmall:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockDistanceMultiplierSmall_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockDistanceMultiplierSmall_InfoText",
+                "valueOptions": {
+                    "min": 0,
+                    "max": 10,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fTargetLockDistanceMultiplierLarge:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockDistanceMultiplierLarge_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockDistanceMultiplierLarge_InfoText",
+                "valueOptions": {
+                    "min": 0,
+                    "max": 10,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fTargetLockDistanceMultiplierExtraLarge:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockDistanceMultiplierExtraLarge_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockDistanceMultiplierExtraLarge_InfoText",
+                "valueOptions": {
+                    "min": 0,
+                    "max": 10,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_CameraSettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "fTargetLockPitchAdjustSpeed:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockPitchAdjustSpeed_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockPitchAdjustSpeed_InfoText",
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 20.0,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fTargetLockYawAdjustSpeed:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockYawAdjustSpeed_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockYawAdjustSpeed_InfoText",
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 40.0,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fTargetLockPitchOffsetStrength:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockPitchOffsetStrength_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockPitchOffsetStrength_InfoText",
+                "valueOptions": {
+                    "min": 0.0,
+                    "max": 1.0,
+                    "step": 0.01,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_ProjectileSettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "uTargetLockArrowAimType:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockArrowAimType_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_TargetLockArrowAimType_InfoText",
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_TargetLockProjectileAimType_FreeAim",
+                        "$TrueDirectionalMovement_TargetLockProjectileAimType_Predict",
+                        "$TrueDirectionalMovement_TargetLockProjectileAimType_Homing"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "uTargetLockMissileAimType:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockMissileAimType_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_TargetLockMissileAimType_InfoText",
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_TargetLockProjectileAimType_FreeAim",
+                        "$TrueDirectionalMovement_TargetLockProjectileAimType_Predict",
+                        "$TrueDirectionalMovement_TargetLockProjectileAimType_Homing"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_Controls_HeaderText",
+                "type": "header",
+                "position": 1
+            },
+            {
+                "id": "uTargetLockKey:Keys",
+                "text": "$TrueDirectionalMovement_TargetLockKey_OptionText",
+                "type": "keymap",
+                "help": "$TrueDirectionalMovement_TargetLockKey_InfoText",
+                "ignoreConflicts": false,
+                "valueOptions": {
+                  "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "bTargetLockUsePOVSwitch:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockUsePOVSwitch_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_TargetLockUsePOVSwitch_InfoText",
+                "groupControl": 18,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fTargetLockPOVHoldDuration:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockPOVHoldDuration_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockPOVHoldDuration_InfoText",
+                "groupCondition": 18,
+                "valueOptions": {
+                    "min": 0.0,
+                    "max": 1.0,
+                    "step": 0.01,
+                    "formatString": "{2} s",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bResetCameraWithTargetLock:TargetLock",
+                "text": "$TrueDirectionalMovement_ResetCameraWithTargetLock_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_ResetCameraWithTargetLock_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bTargetLockUseMouse:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockUseMouse_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_TargetLockUseMouse_InfoText",
+                "groupControl": 17,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "uTargetLockMouseSensitivity:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockMouseSensitivity_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_TargetLockMouseSensitivity_InfoText",
+                "groupCondition": 17,
+                "valueOptions": {
+                    "min": 1,
+                    "max": 200,
+                    "step": 1,
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "bTargetLockUseScrollWheel:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockUseScrollWheel_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_TargetLockUseScrollWheel_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bTargetLockUseRightThumbstick:TargetLock",
+                "text": "$TrueDirectionalMovement_TargetLockUseRightThumbstick_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_TargetLockUseRightThumbstick_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_OptionalControls_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "uSwitchTargetLeftKey:Keys",
+                "text": "$TrueDirectionalMovement_SwitchTargetLeftKey_OptionText",
+                "type": "keymap",
+                "help": "$TrueDirectionalMovement_SwitchTargetLeftKey_InfoText",
+                "ignoreConflicts": false,
+                "valueOptions": {
+                  "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "uSwitchTargetRightKey:Keys",
+                "text": "$TrueDirectionalMovement_SwitchTargetRightKey_OptionText",
+                "type": "keymap",
+                "help": "$TrueDirectionalMovement_SwitchTargetRightKey_InfoText",
+                "ignoreConflicts": false,
+                "valueOptions": {
+                  "sourceType": "ModSettingInt"
+                }
+            }
+        ]
+    },
+    {
+        "pageDisplayName": "$TrueDirectionalMovement_TargetLockWidgetPage",
+        "cursorFillMode": "topToBottom",
+        "content": [
+            {
+                "text": "$TrueDirectionalMovement_VisibilitySettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "bShowReticle:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetShowReticle_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetShowReticle_InfoText",
+                "groupControl": 5,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bShowTargetBar:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetShowTargetBar_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetShowTargetBar_InfoText",
+                "groupControl": 6,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bShowSoftTargetBar:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetShowSoftTargetBar_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetShowSoftTargetBar_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bShowTargetName:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetShowTargetName_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetShowTargetName_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bShowHealthPhantom:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetShowHealthPhantom_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetShowHealthPhantom_InfoText",
+                "groupControl": 7,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bShowDamage:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetShowDamage_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetShowDamage_InfoText",
+                "groupControl": 8,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            
+            {
+                "id": "bHideVanillaTargetBar:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetHideVanillaTargetBar_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetHideVanillaTargetBar_InfoText",
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_WidgetSettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "uReticleAnchor:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetReticleAnchor_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_WidgetReticleAnchor_InfoText",
+                "groupCondition": 5,
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_WidgetAnchor_Body",
+                        "$TrueDirectionalMovement_WidgetAnchor_Head"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "uReticleStyle:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetReticleStyle_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_WidgetReticleStyle_InfoText",
+                "groupCondition": 5,
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_ReticleStyle_Default",
+                        "$TrueDirectionalMovement_ReticleStyle_SimpleDot",
+                        "$TrueDirectionalMovement_ReticleStyle_SimpleGlow"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "uTargetBarAnchor:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetTargetBarAnchor_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_WidgetTargetBarAnchor_InfoText",
+                "groupCondition": 6,
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_WidgetAnchor_Body",
+                        "$TrueDirectionalMovement_WidgetAnchor_Head"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "fTargetBarZOffset:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetTargetBarZOffset_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetTargetBarZOffset_InfoText",
+                "groupCondition": 6,
+                "valueOptions": {
+                    "min": -200,
+                    "max": 200,
+                    "step": 1,
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "uTargetLevelMode:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetTargetLevelMode_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_WidgetTargetLevelMode_InfoText",
+                "groupControl": 9,
+                "groupCondition": 6,
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_LevelMode_Disable",
+                        "$TrueDirectionalMovement_LevelMode_Icon",
+                        "$TrueDirectionalMovement_LevelMode_Text",
+                        "$TrueDirectionalMovement_LevelMode_Outline"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "uTargetLevelThreshold:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetTargetLevelThreshold_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetTargetLevelThreshold_InfoText",
+                "groupCondition": {"AND": [6, 9]},
+                "valueOptions": {
+                    "min": 0,
+                    "max": 50,
+                    "step": 1,
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "fHealthPhantomDuration:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetHealthPhantomDuration_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetHealthPhantomDuration_InfoText",
+                "groupCondition": 7,
+                "valueOptions": {
+                    "min": 0.01,
+                    "max": 5.0,
+                    "step": 0.01,
+                    "formatString": "{2} s",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fDamageDuration:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetDamageDuration_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetDamageDuration_InfoText",
+                "groupCondition": 8,
+                "valueOptions": {
+                    "min": 0.01,
+                    "max": 5.0,
+                    "step": 0.01,
+                    "formatString": "{2} s",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_ScaleOpacitySettings_HeaderText",
+                "type": "header",
+                "position": 1
+            },
+            {
+                "id": "fReticleScale:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetReticleScale_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetReticleScale_InfoText",
+                "groupCondition": 5,
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 2.0,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bUseHUDOpacityForReticle:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetUseHUDOpacityForReticle_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetUseHUDOpacityForReticle_InfoText",
+                "groupCondition": 5,
+                "groupControl": 10,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fReticleOpacity:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetReticleOpacity_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetReticleOpacity_InfoText",
+                "groupCondition": {"AND": [5, {"NOT": 10}]},
+                "valueOptions": {
+                    "min": 0.01,
+                    "max": 1.0,
+                    "step": 0.01,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fTargetBarScale:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetTargetBarScale_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetTargetBarScale_InfoText",
+                "groupCondition": 6,
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 2.0,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bUseHUDOpacityForTargetBar:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetUseHUDOpacityForTargetBar_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_WidgetUseHUDOpacityForTargetBar_InfoText",
+                "groupCondition": 6,
+                "groupControl": 11,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fTargetBarOpacity:TargetLockWidget",
+                "text": "$TrueDirectionalMovement_WidgetTargetBarOpacity_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_WidgetTargetBarOpacity_InfoText",
+                "groupCondition": {"AND": [6, {"NOT": 11}]},
+                "valueOptions": {
+                    "min": 0.01,
+                    "max": 1.0,
+                    "step": 0.01,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            }
+        ]
+    },
+    {
+        "pageDisplayName": "$TrueDirectionalMovement_BossBarWidgetPage",
+        "cursorFillMode": "topToBottom",
+        "content": [
+            {
+                "text": "$TrueDirectionalMovement_VisibilitySettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "bShowBossBar:BossBarWidget",
+                "text": "$TrueDirectionalMovement_ShowBossBar_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_ShowBossBar_InfoText",
+                "groupControl": 12,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bShowBossHealthPhantom:BossBarWidget",
+                "text": "$TrueDirectionalMovement_ShowBossHealthPhantom_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_ShowBossHealthPhantom_InfoText",
+                "groupCondition": 12,
+                "groupControl": 13,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bShowBossDamage:BossBarWidget",
+                "text": "$TrueDirectionalMovement_ShowBossDamage_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_ShowBossDamage_InfoText",
+                "groupCondition": 12,
+                "groupControl": 14,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "bBossHideVanillaTargetBar:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossHideVanillaTargetBar_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_BossHideVanillaTargetBar_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_WidgetSettings_HeaderText",
+                "type": "header"
+            },
+            {
+                "id": "uBossNameAlignment:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossNameAlignment_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_BossNameAlignment_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_NameAlignment_Center",
+                        "$TrueDirectionalMovement_NameAlignment_Left",
+                        "$TrueDirectionalMovement_NameAlignment_Right"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "uBossLevelMode:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossLevelMode_OptionText",
+                "type": "enum",
+                "help": "$TrueDirectionalMovement_BossLevelMode_InfoText",
+                "groupCondition": 12,
+                "groupControl": 15,
+                "valueOptions": {
+                    "options": [
+                        "$TrueDirectionalMovement_LevelMode_Disable",
+                        "$TrueDirectionalMovement_LevelMode_Icon",
+                        "$TrueDirectionalMovement_LevelMode_Text"
+                    ],
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "uBossLevelThreshold:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossLevelThreshold_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_BossLevelThreshold_InfoText",
+                "groupCondition": {"AND": [12, 15]},
+                "valueOptions": {
+                    "min": 0,
+                    "max": 50,
+                    "step": 1,
+                    "sourceType": "ModSettingInt"
+                }
+            },
+            {
+                "id": "fBossHealthPhantomDuration:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossHealthPhantomDuration_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_BossHealthPhantomDuration_InfoText",
+                "groupCondition": {"AND": [12, 13]},
+                "valueOptions": {
+                    "min": 0.01,
+                    "max": 5.0,
+                    "step": 0.01,
+                    "formatString": "{2} s",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fBossDamageDuration:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossDamageDuration_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_BossDamageDuration_InfoText",
+                "groupCondition": {"AND": [12, 14]},
+                "valueOptions": {
+                    "min": 0.01,
+                    "max": 5.0,
+                    "step": 0.01,
+                    "formatString": "{2} s",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+
+            {
+                "text": "$TrueDirectionalMovement_ScaleOpacityPositionSettings_HeaderText",
+                "type": "header",
+                "position": 1
+            },
+            {
+                "id": "fBossBarScale:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossBarScale_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_BossBarScale_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "min": 0.1,
+                    "max": 2.0,
+                    "step": 0.1,
+                    "formatString": "{1}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bUseHUDOpacityForBossBar:BossBarWidget",
+                "text": "$TrueDirectionalMovement_UseHUDOpacityForBossBar_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_UseHUDOpacityForBossBar_InfoText",
+                "groupCondition": 12,
+                "groupControl": 16,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fBossBarOpacity:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossBarOpacity_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_BossBarOpacity_InfoText",
+                "groupCondition": {"AND": [12, {"NOT": 16}]},
+                "valueOptions": {
+                    "min": 0.01,
+                    "max": 1.0,
+                    "step": 0.01,
+                    "formatString": "{2}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fBossBarX:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossBarX_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_BossBarX_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "min": 0.001,
+                    "max": 1.0,
+                    "step": 0.001,
+                    "formatString": "{3}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "fBossBarY:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossBarY_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_BossBarY_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "min": 0.001,
+                    "max": 1.0,
+                    "step": 0.001,
+                    "formatString": "{3}",
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bBossBarOffsetSubtitles:BossBarWidget",
+                "text": "$TrueDirectionalMovement_BossBarOffsetSubtitles_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_BossBarOffsetSubtitles_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            },
+            {
+                "id": "fMultipleBossBarsOffset:BossBarWidget",
+                "text": "$TrueDirectionalMovement_MultipleBossBarsOffset_OptionText",
+                "type": "slider",
+                "help": "$TrueDirectionalMovement_MultipleBossBarsOffset_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "min": 1,
+                    "max": 100,
+                    "step": 1,
+                    "sourceType": "ModSettingFloat"
+                }
+            },
+            {
+                "id": "bMultipleBossBarsStackUpwards:BossBarWidget",
+                "text": "$TrueDirectionalMovement_MultipleBossBarsStackUpwards_OptionText",
+                "type": "toggle",
+                "help": "$TrueDirectionalMovement_MultipleBossBarsStackUpwards_InfoText",
+                "groupCondition": 12,
+                "valueOptions": {
+                    "sourceType": "ModSettingBool"
+                }
+            }
+        ]
+    }],
+    "customContent": {
+        "source": "TrueDirectionalMovement/TDM_Splash.swf"
+    }
+}
