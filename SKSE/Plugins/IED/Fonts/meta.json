@@ -1,0 +1,206 @@
+{
+	"version": 1,
+	"default_font":
+	{
+		"glyphs":
+		{
+			"glyph_ranges":
+			[
+			]
+		},
+		"size": 13
+	},
+	"data":
+	{
+		"Tahoma":
+		{
+			"file": "Tahoma.ttf",
+			"win_font": true,
+			"size": 17,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs":""
+		},
+		"Verdana":
+		{
+			"file": "Verdana.ttf",
+			"win_font": true,
+			"size": 17,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Courier New":
+		{
+			"file": "cour.ttf",
+			"win_font": true,
+			"size": 15,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Courier New Bold":
+		{
+			"file": "courbd.ttf",
+			"win_font": true,
+			"size": 15,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Segoe UI":
+		{
+			"file": "segoeui.ttf",
+			"win_font": true,
+			"size": 18,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"MS Gothic":
+		{
+			"file": "msgothic.ttc",
+			"win_font": true,
+			"size": 18,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"YaHei UI":
+		{
+			"file": "msyh.ttc",
+			"win_font": true,
+			"size": 17,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Yu Gothic UI":
+		{
+			"file": "YuGothM.ttc",
+			"win_font": true,
+			"size": 17,
+			"glyph_ranges": 
+			[
+				
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},		
+		"Consolas":
+		{
+			"file": "consola.ttf",
+			"win_font": true,
+			"size": 16,
+			"glyph_ranges": 
+			[
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Consolas Bold":
+		{
+			"file": "consolab.ttf",
+			"win_font": true,
+			"size": 16,
+			"glyph_ranges": 
+			[
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Arial":
+		{
+			"file": "arial.ttf",
+			"win_font": true,
+			"size": 16,
+			"glyph_ranges": 
+			[
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Arial Bold":
+		{
+			"file": "arialbd.ttf",
+			"win_font": true,
+			"size": 16,
+			"glyph_ranges": 
+			[
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Lucida Console Regular":
+		{
+			"file": "lucon.ttf",
+			"win_font": true,
+			"size": 16,
+			"glyph_ranges": 
+			[
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		},
+		"Malgun Gothic":
+		{
+			"file": "malgun.ttf",
+			"win_font": true,
+			"size": 18,
+			"glyph_ranges": 
+			[
+			],
+			"glyph_presets":
+			[
+			],
+			"extra_glyphs": ""
+		}
+	}
+}
