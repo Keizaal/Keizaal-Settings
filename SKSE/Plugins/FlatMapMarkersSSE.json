@@ -17,6 +17,18 @@
 			"editorID": "DLC01FalmerValley",
 			"markerHeight": 180000,
 			"enabled": true
+		},		
+		{
+			"name": "Soul Cairn",
+			"editorID": "DLC01SoulCairn",
+			"markerHeight": 180000,
+			"enabled": true
+		},
+		{
+			"name": "Dayspring Canyon",
+			"editorID": "DLC1HunterHQWorld",
+			"markerHeight": 180000,
+			"enabled": true
 		}
 	]
 }
