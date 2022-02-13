@@ -1,0 +1,56 @@
+[
+  {
+    "choose": "$Green",
+    "Mod": "JS Emissive Eyes",
+    "option": "$Passive",
+    "page": "Dwarven Automatons"
+  },
+  {
+    "choose": "$Red",
+    "Mod": "JS Emissive Eyes",
+    "option": "$Active",
+    "page": "Dwarven Automatons"
+  },
+  {
+    "choose": "$Green",
+    "index": 2,
+    "Mod": "JS Emissive Eyes",
+    "option": "$Passive",
+    "page": "Dwarven Automatons"
+  },
+  {
+    "choose": "$Red",
+    "index": 2,
+    "Mod": "JS Emissive Eyes",
+    "option": "$Active",
+    "page": "Dwarven Automatons"
+  },
+  {
+    "choose": "$Green",
+    "index": 3,
+    "Mod": "JS Emissive Eyes",
+    "option": "$Passive",
+    "page": "Dwarven Automatons"
+  },
+  {
+    "choose": "$Red",
+    "index": 3,
+    "Mod": "JS Emissive Eyes",
+    "option": "$Active",
+    "page": "Dwarven Automatons"
+  },
+  {
+    "choose": "$Green",
+    "index": 4,
+    "Mod": "JS Emissive Eyes",
+    "option": "$Passive",
+    "page": "Dwarven Automatons"
+  },
+  {
+    "choose": "$Red",
+    "index": 4,
+    "Mod": "JS Emissive Eyes",
+    "option": "$Active",
+    "page": "Dwarven Automatons"
+  }
+]

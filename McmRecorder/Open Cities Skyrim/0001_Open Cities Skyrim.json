@@ -1,0 +1,14 @@
+[
+  {
+    "Mod": "Open Cities Skyrim",
+    "option": "$OblivionGates",
+    "page": "$Options",
+    "toggle": "off"
+  },
+  {
+    "Mod": "Open Cities Skyrim",
+    "option": "$CityAttendants",
+    "page": "$Options",
+    "toggle": "off"
+  }
+]
