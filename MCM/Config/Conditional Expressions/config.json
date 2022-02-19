@@ -1,0 +1,309 @@
+{
+    "modName": "Conditional Expressions",
+    "displayName": "$CondExpressions",
+    "minMcmVersion": 9,
+    "pages": [
+        {
+            "pageDisplayName": "$Settings_Page",
+            "cursorFillMode": "topToBottom",
+            "content": [
+                {
+                    "type": "header",
+                    "text": "$ListofExpressions_Header"
+                },
+                {
+                    "type": "empty"
+                },
+                {
+                    "id": "iEatingExpression:ListofExpressions",
+                    "type": "enum",
+                    "text": "$EatingExpression_ListofExpressions",
+                    "help": "$EatingExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "options": [
+                            "$Disabled_ENUM",
+                            "$Slow Eating_ENUM",
+                            "$Quick Eating_ENUM"
+                        ],
+                        "sourceType": "ModSettingInt",
+                        "defaultValue": 1
+                    }
+                },
+                {
+                    "id": "bRandomIdleExpressions:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$RandomIdleExpressions_ListofExpressions",
+                    "help": "$RandomIdleExpressions_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    },
+                    "groupControl": 1
+                },
+                {
+                    "id": "bOutofStaminaExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$OutofStaminaExpression_ListofExpressions",
+                    "help": "$OutofStaminaExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bInPainExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$InPainExpression_ListofExpressions",
+                    "help": "$InPainExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bThisIsGoodSkoomaExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$ThisIsGoodSkoomaExpression_ListofExpressions",
+                    "help": "$ThisIsGoodSkoomaExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bSneakingExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$SneakingExpression_ListofExpressions",
+                    "help": "$SneakingExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bHeadacheDiseased:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$HeadacheDiseased_ListofExpressions",
+                    "help": "$HeadacheDiseased_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "type": "empty"
+                },
+                {
+                    "type": "header",
+                    "text": "$Maintenance_Header"
+                },
+                {
+                    "id": "sResetCurrentExpression:Maintenance",
+                    "valueOptions": {
+                        "value": "",
+                        "sourceType": "ModSettingString"
+                    },
+                    "type": "text",
+                    "text": "$ResetCurrentExpression_Maintenance",
+                    "help": "$ResetCurrentExpression_Maintenance_Help",
+                    "action": {
+                        "type": "CallFunction",
+                        "function": "ResetCurrentExpression"
+                    }
+                },
+                {
+                    "type": "empty",
+                    "position": 1
+                },
+                {
+                    "type": "empty"
+                },
+                {
+                    "id": "bPlayerIsInCombat:HiddenToggles",
+                    "type": "hiddenToggle",
+                    "text": "$PlayerIsInCombat_HiddenToggles",
+                    "help": "$$",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bLessDramaticCombatExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$LessDramaticCombatExpression_ListofExpressions",
+                    "help": "$LessDramaticCombatExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bColdExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$ColdExpression_ListofExpressions",
+                    "help": "$ColdExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    },
+                    "groupCondition": 1
+                },
+                {
+                    "id": "iColdDetection:ListofExpressions",
+                    "type": "enum",
+                    "text": "$ColdDetection_ListofExpressions",
+                    "help": "$ColdDetection_ListofExpressions_Help",
+                    "valueOptions": {
+                        "options": [
+                            "$Automatic_ENUM",
+                            "$Frostfall_ENUM",
+                            "$Frostbite_ENUM",
+                            "$Vanilla - Snowing_ENUM"
+                        ],
+                        "sourceType": "ModSettingInt",
+                        "defaultValue": 0
+                    }
+                },
+                {
+                    "id": "bDrunkExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$DrunkExpression_ListofExpressions",
+                    "help": "$DrunkExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bEmbarrassedNoClothesExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$EmbarrassedNoClothesExpression_ListofExpressions",
+                    "help": "$EmbarrassedNoClothesExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bWaterTorchExpression:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$WaterTorchExpression_ListofExpressions",
+                    "help": "$WaterTorchExpression_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bBreathingSounds:ListofExpressions",
+                    "type": "toggle",
+                    "text": "$BreathingSounds_ListofExpressions",
+                    "help": "$BreathingSounds_ListofExpressions_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "type": "empty"
+                },
+                {
+                    "id": "sUpdateRestart:Maintenance",
+                    "valueOptions": {
+                        "value": "",
+                        "sourceType": "ModSettingString"
+                    },
+                    "type": "text",
+                    "text": "$UpdateRestart_Maintenance",
+                    "help": "$UpdateRestart_Maintenance_Help",
+                    "action": {
+                        "type": "CallFunction",
+                        "function": "UpdateRestart"
+                    }
+                },
+                {
+                    "id": "sPreparetoUninstall:Maintenance",
+                    "valueOptions": {
+                        "value": "",
+                        "sourceType": "ModSettingString"
+                    },
+                    "type": "text",
+                    "text": "$PreparetoUninstall_Maintenance",
+                    "help": "$PreparetoUninstall_Maintenance_Help",
+                    "action": {
+                        "type": "CallFunction",
+                        "function": "PreparetoUninstall"
+                    }
+                }
+            ]
+        },
+        {
+            "pageDisplayName": "$Maintenance_Page",
+            "cursorFillMode": "topToBottom",
+            "content": [
+                {
+                    "type": "header",
+                    "text": "$AutoloadSettings_Header"
+                },
+                {
+                    "id": "bEnabled:Maintenance",
+                    "type": "toggle",
+                    "text": "$Enabled_Maintenance",
+                    "help": "$Enabled_Maintenance_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "iLoadingDelay:Maintenance",
+                    "type": "slider",
+                    "text": "$LoadingDelay_Maintenance",
+                    "help": "$LoadingDelay_Maintenance_Help",
+                    "valueOptions": {
+                        "min": 0,
+                        "max": 600,
+                        "step": 1,
+                        "defaultValue": 0,
+                        "sourceType": "ModSettingInt",
+                        "formatString": "{0}"
+                    }
+                },
+                {
+                    "id": "sLoadSettings:Maintenance",
+                    "valueOptions": {
+                        "value": "",
+                        "sourceType": "ModSettingString"
+                    },
+                    "type": "text",
+                    "text": "$LoadSettings_Maintenance",
+                    "help": "$LoadSettings_Maintenance_Help",
+                    "action": {
+                        "type": "CallFunction",
+                        "function": "Load"
+                    }
+                },
+                {
+                    "id": "sResetSettings:Maintenance",
+                    "valueOptions": {
+                        "value": "",
+                        "sourceType": "ModSettingString"
+                    },
+                    "type": "text",
+                    "text": "$ResetSettings_Maintenance",
+                    "help": "$ResetSettings_Maintenance_Help",
+                    "action": {
+                        "type": "CallFunction",
+                        "function": "Default"
+                    }
+                }
+            ]
+        }
+    ],
+    "customContent": {
+        "source": "MCM/MCM_CondiExp.dds",
+        "x": 0,
+        "y": 0
+    }
+}

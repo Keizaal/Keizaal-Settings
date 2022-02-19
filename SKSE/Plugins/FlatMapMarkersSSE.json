@@ -1,0 +1,34 @@
+{
+	"whiteListedWorldSpaces": [
+		{
+			"name": "Blackreach",
+			"editorID": "Blackreach",
+			"markerHeight": 180000,
+			"enabled": true
+		},
+		{
+			"name": "Sovngarde",
+			"editorID": "Sovngarde",
+			"markerHeight": 180000,
+			"enabled": true
+		},
+		{
+			"name": "Forgotten Vale",
+			"editorID": "DLC01FalmerValley",
+			"markerHeight": 180000,
+			"enabled": true
+		},		
+		{
+			"name": "Soul Cairn",
+			"editorID": "DLC01SoulCairn",
+			"markerHeight": 180000,
+			"enabled": true
+		},
+		{
+			"name": "Dayspring Canyon",
+			"editorID": "DLC1HunterHQWorld",
+			"markerHeight": 180000,
+			"enabled": true
+		}
+	]
+}

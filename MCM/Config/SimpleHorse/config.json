@@ -1,0 +1,48 @@
+{
+    "modName": "SimpleHorse",
+    "displayName": "Simple Horse",
+    "minMcmVersion": 9,
+	"cursorFillMode": "topToBottom",
+	"content": [
+                {
+					"id": "iCallkey:SH",
+					"text": "$SH_CallKey",
+					"type": "keymap",
+					"help": "$SH_CallKeyDesc",
+					"ignoreConflicts": false,
+					"valueOptions": {
+                        "sourceType": "ModSettingInt"
+						}
+				},
+				{
+                    "id": "bCalm:SH",
+                    "text": "$SH_Calm",
+					"type": "toggle",
+                    "help": "$SH_CalmDesc",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+				{
+                    "id": "bFollower:SH",
+                    "type": "toggle",
+                    "text": "$SH_Follower",
+                    "help": "$SH_FollowerDesc",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": false
+                    }
+                },
+				{
+                    "id": "bActivateMod:SH",
+                    "type": "toggle",
+                    "text": "$SH_ActivateMod",
+                    "help": "$SH_ActivateModDesc",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                }
+				]
+}

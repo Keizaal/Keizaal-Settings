@@ -4,23 +4,27 @@ Spell property aaaSimpleHorseCallSpell auto
 Actor property player auto
 GlobalVariable property aaaSimpleHorseKeyCode auto
 
+
 Event OnInit()
 	;if player.HasSpell(aaaSimpleHorseCallSpell) == False
 		;player.AddSpell(aaaSimpleHorseCallSpell)
 	;endif
+	int callkey = aaaSimpleHorseKeyCode.GetValueInt()
 	RegistKey()
 EndEvent
 
 Function RegistKey()
-	RegisterForKey(aaaSimpleHorseKeyCode.GetValueInt())
+	int callkey = aaaSimpleHorseKeyCode.GetValueInt()
+	RegisterForKey(callkey)
 EndFunction
 
 Function UnRegistKey()
-	UnRegisterForKey(aaaSimpleHorseKeyCode.GetValueInt())
+	UnRegisterForAllKeys()
 EndFunction
 
 Event OnKeyDown(Int KeyCode)
-	If KeyCode == aaaSimpleHorseKeyCode.GetValueInt() && !Utility.IsInMenuMode()
+	int callkey = aaaSimpleHorseKeyCode.GetValueInt()
+	If KeyCode == callkey && !Utility.IsInMenuMode()
 		aaaSimpleHorseCallSpell.Cast(player)	
 	EndIf
 EndEvent

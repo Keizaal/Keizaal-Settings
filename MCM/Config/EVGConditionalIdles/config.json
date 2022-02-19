@@ -1,0 +1,272 @@
+{
+    "modName": "EVGConditionalIdles",
+    "displayName": "EVG Conditional Idles",
+    "minMcmVersion": 9,
+    "pages": [
+        {
+            "pageDisplayName": "$Player_Page",
+            "cursorFillMode": "topToBottom",
+            "content": [
+                {
+                    "type": "header",
+                    "text": "$MovementEnabled_Header"
+                },
+                {
+                    "id": "bCold:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$Cold_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bInjured:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$Injured_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bShieldCover:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$ShieldCover_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bModestyMale:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$ModestyMale_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bModestyFemale:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$ModestyFemale_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "type": "header",
+                    "text": "$Idles_Header"
+                },
+                {
+                    "id": "bFatiguedStage1:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$FatiguedStage1_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bFatiguedStage2:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$FatiguedStage2_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bHeadache:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$Headache_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bStretch:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$Stretch_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                }
+            ]
+        },
+        {
+            "pageDisplayName": "$NPC_Page",
+            "cursorFillMode": "topToBottom",
+            "content": [
+                {
+                    "type": "header",
+                    "text": "$MovementEnabled_Header"
+                },
+                {
+                    "id": "bNPCCold:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCCold_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bNPCInjured:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCInjured_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": false
+                    }
+                },
+                {
+                    "id": "bNPCShieldCover:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCShieldCover_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bNPCModestyMale:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCModestyMale_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bNPCModestyFemale:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCModestyFemale_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "type": "header",
+                    "text": "$Idles_Header"
+                },
+                {
+                    "id": "bNPCFatiguedStage1:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCFatiguedStage1_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "bNPCFatiguedStage2:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCFatiguedStage2_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": false
+                    }
+                },
+                {
+                    "id": "bNPCHeadache:MovementEnabled",
+                    "type": "toggle",
+                    "text": "$NPCHeadache_MovementEnabled",
+                    "help": "",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                }
+            ]
+        },
+        {
+            "pageDisplayName": "$Maintenance_Page",
+            "cursorFillMode": "topToBottom",
+            "content": [
+                {
+                    "type": "header",
+                    "text": "$AutoloadSettings_Header"
+                },
+                {
+                    "id": "bEnabled:Maintenance",
+                    "type": "toggle",
+                    "text": "$Enabled_Maintenance",
+                    "help": "$Enabled_Maintenance_Help",
+                    "valueOptions": {
+                        "sourceType": "ModSettingBool",
+                        "defaultValue": true
+                    }
+                },
+                {
+                    "id": "iLoadingDelay:Maintenance",
+                    "type": "slider",
+                    "text": "$LoadingDelay_Maintenance",
+                    "help": "$LoadingDelay_Maintenance_Help",
+                    "valueOptions": {
+                        "min": 0,
+                        "max": 600,
+                        "step": 1,
+                        "defaultValue": 0,
+                        "sourceType": "ModSettingInt",
+                        "formatString": "{0}"
+                    }
+                },
+                {
+                    "id": "sLoadSettings:Maintenance",
+                    "valueOptions": {
+                        "value": "",
+                        "sourceType": "ModSettingString"
+                    },
+                    "type": "text",
+                    "text": "$LoadSettings_Maintenance",
+                    "help": "$LoadSettings_Maintenance_Help",
+                    "action": {
+                        "type": "CallFunction",
+                        "function": "Load"
+                    }
+                },
+                {
+                    "id": "sResetSettings:Maintenance",
+                    "valueOptions": {
+                        "value": "",
+                        "sourceType": "ModSettingString"
+                    },
+                    "type": "text",
+                    "text": "$ResetSettings_Maintenance",
+                    "help": "$ResetSettings_Maintenance_Help",
+                    "action": {
+                        "type": "CallFunction",
+                        "function": "Default"
+                    }
+                }
+            ]
+        }
+    ],
+    "customContent": {
+        "source": "EVGCI/EVGCIMCMCover.dds",
+        "x": 0,
+        "y": 0
+    }
+}
