@@ -1,0 +1,7 @@
+#
+# objects with display name in this list will be ignored by the custom object selector. 
+# Make sure strings are all lowercase
+#
+
+ignore = [
+]
