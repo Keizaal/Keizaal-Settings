@@ -1,0 +1,119 @@
+## --
+## for a detailed guide, visit the BTPS wiki on GitLab (linked on Nexus page)
+##
+## don't edit this file, edit FilterPresets.toml instead
+## --
+
+[[filterPreset]]
+	name = "Stealing only While Sneaking"
+	description = "Disables activating most object types if activation would be a crime"
+	
+	conditions = [
+		{ function = "!IsSneaking" },
+		{ connector = "AND" },
+		{ function = "IsCrimeToActivate" },
+	]
+	
+	formTypes = [
+		{ typeName = "Misc" },
+		{ typeName = "Ingredient" },
+		{ typeName = "Weapon" },
+		{ typeName = "AlchemyItem" },
+		{ typeName = "Armor" },
+		{ typeName = "Ammo" },
+		{ typeName = "Scroll" },
+		{ typeName = "SoulGem" },
+		{ typeName = "Spell" },
+		{ typeName = "KeyMaster" },
+		{ typeName = "Projectile" },
+		{ typeName = "Apparatus" },
+		{ typeName = "Flora" },
+		{ typeName = "Tree" },
+		{ typeName = "Container" },
+		{ typeName = "Light" },
+	]
+	
+[[filterPreset]]
+	name = "Furniture Filter"
+	description = "Hide furniture while sneaking"
+	
+	conditions = [
+		{ function = "IsSneaking" },
+	]
+	
+	formTypes = [
+		{ typeName = "Furniture" },
+	]
+	
+[[filterPreset]]
+	name = "No Stealing while Sitting"
+	description = "Disables stealing objects while sitting down"
+	
+	conditions = [
+		{ function = "IsSitting" },
+		{ connector = "AND" },
+		{ function = "IsCrimeToActivate" },
+	]
+	
+	formTypes = [
+		{ typeName = "Misc" },
+		{ typeName = "Ingredient" },
+		{ typeName = "Weapon" },
+		{ typeName = "AlchemyItem" },
+		{ typeName = "Armor" },
+		{ typeName = "Ammo" },
+		{ typeName = "Scroll" },
+		{ typeName = "SoulGem" },
+		{ typeName = "Spell" },
+		{ typeName = "KeyMaster" },
+		{ typeName = "Projectile" },
+		{ typeName = "Apparatus" },
+		{ typeName = "Flora" },
+		{ typeName = "Tree" },
+		{ typeName = "Container" },
+		{ typeName = "Light" },
+	]
+
+## --
+## EXAMPLES
+## --
+
+#[[filterPreset]]
+#	name = "Horseback Filter - no misc"
+#	description = "Disables activating misc objects while on horseback, except if the shift key is held down"
+#	
+#	conditions = [
+#		{ function = "IsOnHorseback" },
+#		{ connector = "AND" },
+#		{ function = "!IsKeyDown", parameters = ["42"] },
+#		#{ function = "!IsKeyToggled", parameters = ["42"] }, ## alternative for toggling key instead of holding
+#	]
+#	
+#	formTypes = [
+#		{ typeName = "Misc" },
+#	]
+#
+#[[filterPreset]]
+#	name = "Value Filter"
+#	description = "Hides objects that are worth less than 50 gold coins if shift key is held down (except gold coins and lockpicks) - doesn't apply to all object types"
+#	
+#	conditions = [
+#		{ function = "IsKeyDown", parameters = ["42"] },
+#		{ connector = "AND" },
+#		{ function = "IsValueLess", parameters = ["50"] },
+#		{ connector = "AND" },
+#		{ function = "!IsBaseID", parameters = ["0xF", "0xA"] }, #0xF, 0xA = baseID for gold coin, lockpick
+#	]
+#	
+#	formTypes = [
+#		{ typeName = "Misc" },
+#		{ typeName = "Ingredient" },
+#		{ typeName = "Weapon" },
+#		{ typeName = "AlchemyItem" },
+#		{ typeName = "Armor" },
+#		{ typeName = "Ammo" },
+#		{ typeName = "Scroll" },
+#		{ typeName = "SoulGem" },
+#		{ typeName = "Projectile" },
+#		{ typeName = "Light" },
+#	]

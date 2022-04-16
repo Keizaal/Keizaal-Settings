@@ -65,7 +65,7 @@
 				"valueOptions": {
 					"sourceType": "ModSettingBool"
 				}
-			},
+			},		
 			
 			{
 				"text": "$BetterThirdPersonSelection_ControlSettings_HeaderText",
@@ -234,132 +234,24 @@
 					"formatString": "{1}",
 					"sourceType": "ModSettingFloat"
 				}
+			},
+			
+			{
+				"id": "fHoldToDismountMinTime:General",
+				"text": "$BetterThirdPersonSelection_HoldToDismountMinTime_HorseBack_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_HoldToDismountMinTime_HorseBack_InfoText",
+				"valueOptions": {
+					"min": 0.0,
+					"max": 5.0,
+					"step": 0.1,
+					"formatString": "{1}",
+					"sourceType": "ModSettingFloat"
+				}
 			}
 		]
 	},
-	
-	{
-		"pageDisplayName": "$BetterThirdPersonSelection_PriorityPage",
-		"cursorFillMode": "topToBottom",
-		"content": [
-			{
-				"text": "$BetterThirdPersonSelection_PriorityPage_HeaderText",
-				"type": "header"
-			},
-			
-			{
-				"id": "fAngleMult:Priority",
-				"text": "$BetterThirdPersonSelection_AngleMult_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_AngleMult_InfoText",
-				"valueOptions": {
-					"min": 0.0,
-					"max": 10.0,
-					"step": 0.1,
-					"formatString": "{2}",
-					"sourceType": "ModSettingFloat"
-				}
-			},
-			
-			{
-				"id": "fDistMult:Priority",
-				"text": "$BetterThirdPersonSelection_DistMult_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_DistMult_InfoText",
-				"valueOptions": {
-					"min": 0.0,
-					"max": 10.0,
-					"step": 0.1,
-					"formatString": "{2}",
-					"sourceType": "ModSettingFloat"
-				}
-			},
-			
-			{
-				"id": "fTypemult:Priority",
-				"text": "$BetterThirdPersonSelection_TypeMult_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_TypeMult_InfoText",
-				"valueOptions": {
-					"min": 0.0,
-					"max": 10.0,
-					"step": 0.1,
-					"formatString": "{2}",
-					"sourceType": "ModSettingFloat"
-				}
-			},
-			
-			{
-				"id": "fSpecificMult:Priority",
-				"text": "$BetterThirdPersonSelection_SpecificMult_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_SpecificMult_InfoText",
-				"valueOptions": {
-					"min": 0.0,
-					"max": 10.0,
-					"step": 0.1,
-					"formatString": "{2}",
-					"sourceType": "ModSettingFloat"
-				}
-			},
-			
-			{
-				"id": "fValueMult:Priority",
-				"text": "$BetterThirdPersonSelection_ValueMult_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_ValueMult_InfoText",
-				"valueOptions": {
-					"min": 0.0,
-					"max": 10.0,
-					"step": 0.1,
-					"formatString": "{2}",
-					"sourceType": "ModSettingFloat"
-				}
-			},
-			
-			{
-				"id": "iMaxValue:Priority",
-				"text": "$BetterThirdPersonSelection_MaxValue_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_MaxValue_InfoText",
-				"valueOptions": {
-					"min": 1,
-					"max": 2000,
-					"step": 1,
-					"sourceType": "ModSettingInt"
-				}
-			},
-			
-			{
-				"id": "fNativeSelectionBonus:Priority",
-				"text": "$BetterThirdPersonSelection_NativeSelectionBonus_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_NativeSelectionBonus_InfoText",
-				"valueOptions": {
-					"min": -100.0,
-					"max": 100.0,
-					"step": 0.01,
-					"formatString": "{2}",
-					"sourceType": "ModSettingFloat"
-				}
-			},
-			
-			{
-				"id": "fPreviousSelectionBonus:Priority",
-				"text": "$BetterThirdPersonSelection_PreviousSelectionBonus_OptionText",
-				"type": "slider",
-				"help": "$BetterThirdPersonSelection_PreviousSelectionBonus_InfoText",
-				"valueOptions": {
-					"min": -100.0,
-					"max": 100.0,
-					"step": 0.01,
-					"formatString": "{2}",
-					"sourceType": "ModSettingFloat"
-				}
-			}
-		]	
-	},
-	
+
 	{
 		"pageDisplayName": "$BetterThirdPersonSelection_WidgetPage",
 		"cursorFillMode": "topToBottom",
@@ -599,6 +491,128 @@
 	},
 	
 	{
+		"pageDisplayName": "$BetterThirdPersonSelection_PriorityPage",
+		"cursorFillMode": "topToBottom",
+		"content": [
+			{
+				"text": "$BetterThirdPersonSelection_PriorityPage_HeaderText",
+				"type": "header"
+			},
+			
+			{
+				"id": "fAngleMult:Priority",
+				"text": "$BetterThirdPersonSelection_AngleMult_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_AngleMult_InfoText",
+				"valueOptions": {
+					"min": 0.0,
+					"max": 10.0,
+					"step": 0.1,
+					"formatString": "{2}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+			
+			{
+				"id": "fDistMult:Priority",
+				"text": "$BetterThirdPersonSelection_DistMult_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_DistMult_InfoText",
+				"valueOptions": {
+					"min": 0.0,
+					"max": 10.0,
+					"step": 0.1,
+					"formatString": "{2}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+			
+			{
+				"id": "fTypemult:Priority",
+				"text": "$BetterThirdPersonSelection_TypeMult_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_TypeMult_InfoText",
+				"valueOptions": {
+					"min": 0.0,
+					"max": 10.0,
+					"step": 0.1,
+					"formatString": "{2}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+			
+			{
+				"id": "fSpecificMult:Priority",
+				"text": "$BetterThirdPersonSelection_SpecificMult_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_SpecificMult_InfoText",
+				"valueOptions": {
+					"min": 0.0,
+					"max": 10.0,
+					"step": 0.1,
+					"formatString": "{2}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+			
+			{
+				"id": "fValueMult:Priority",
+				"text": "$BetterThirdPersonSelection_ValueMult_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_ValueMult_InfoText",
+				"valueOptions": {
+					"min": 0.0,
+					"max": 10.0,
+					"step": 0.1,
+					"formatString": "{2}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+			
+			{
+				"id": "iMaxValue:Priority",
+				"text": "$BetterThirdPersonSelection_MaxValue_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_MaxValue_InfoText",
+				"valueOptions": {
+					"min": 1,
+					"max": 2000,
+					"step": 1,
+					"sourceType": "ModSettingInt"
+				}
+			},
+			
+			{
+				"id": "fNativeSelectionBonus:Priority",
+				"text": "$BetterThirdPersonSelection_NativeSelectionBonus_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_NativeSelectionBonus_InfoText",
+				"valueOptions": {
+					"min": -100.0,
+					"max": 100.0,
+					"step": 0.01,
+					"formatString": "{2}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+			
+			{
+				"id": "fPreviousSelectionBonus:Priority",
+				"text": "$BetterThirdPersonSelection_PreviousSelectionBonus_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_PreviousSelectionBonus_InfoText",
+				"valueOptions": {
+					"min": -100.0,
+					"max": 100.0,
+					"step": 0.01,
+					"formatString": "{2}",
+					"sourceType": "ModSettingFloat"
+				}
+			}
+		]	
+	},
+	
+	{
 		"pageDisplayName": "$BetterThirdPersonSelection_PerformancePage",
 		"cursorFillMode": "topToBottom",
 		"content": [
@@ -633,6 +647,17 @@
 				}
 			}
 		]	
+	},
+
+	{
+		"pageDisplayName": "$BetterThirdPersonSelection_FilterPage",
+		"cursorFillMode": "topToBottom",
+		"content": [
+			{
+				"text": "$BetterThirdPersonSelection_FilterSettings_HeaderText",
+				"type": "header"
+			}
+		]
 	},
 
 	{
@@ -717,16 +742,27 @@
 			},
 			
 			{
-				"text": "$BetterThirdPersonSelection_FunStuff_HeaderText",
+				"text": "$BetterThirdPersonSelection_AdditionalSettings_HeaderText",
 				"type": "header",
 				"position": 1
+			},
+			
+			{
+				"id": "bHotReloadConfig:Debug",
+				"text": "$BetterThirdPersonSelection_HotReloadConfig_OptionText",
+				"type": "toggle",
+				"help": "$BetterThirdPersonSelection_HotReloadConfig_InfoText",
+				"groupControl": 1,
+				"valueOptions": {
+					"sourceType": "ModSettingBool"
+				}
 			},
 			
 			{
 				"id": "bShowFurnitureMarkers:Debug",
 				"text": "$BetterThirdPersonSelection_ShowFurnitureMarkers_OptionText",
 				"type": "toggle",
-				"help": "$BetterThirdPersonSelection_ShowFurnitureMarkersa_InfoText",
+				"help": "$BetterThirdPersonSelection_ShowFurnitureMarkers_InfoText",
 				"groupControl": 1,
 				"valueOptions": {
 					"sourceType": "ModSettingBool"
