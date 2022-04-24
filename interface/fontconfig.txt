@@ -1,17 +1,14 @@
 fontlib "Interface\fonts_console.swf"
 fontlib "Interface\fonts_en.swf"
-fontlib "Interface\fonts_sovngarde.swf"
-fontlib "Interface\fonts_sovngardeconsole.swf"
-fontlib "Interface\fonts_drukaatieburti.swf"
 fontlib "Interface\interface.swf"
 fontlib "Interface\books.swf"
 fontlib "Interface\handwritten.swf"
-map "$ConsoleFont" = "SovngardeConsole" Normal
-map "$StartMenuFont" = "Sovngarde" Normal
-map "$DialogueFont" = "Sovngarde" Normal
-map "$EverywhereFont" = "Sovngarde" Normal
-map "$EverywhereBoldFont" = "Sovngarde" Normal
-map "$EverywhereMediumFont" = "Sovngarde" Normal
+map "$ConsoleFont" = "Arial" Normal
+map "$StartMenuFont" = "Interface" Normal
+map "$DialogueFont" = "Interface" Normal
+map "$EverywhereFont" = "Interface" Normal
+map "$EverywhereBoldFont" = "Interface" Normal
+map "$EverywhereMediumFont" = "Interface" Normal
 map "$DragonFont" = "Dragon_script" Normal
 map "$SkyrimBooks" = "Books" Normal
 map "$HandwrittenFont" = "Handwritten" Normal
@@ -22,4 +19,7 @@ map "$DaedricFont" = "Daedric" Normal
 map "$MageScriptFont" = "Mage Script" Normal
 map "$SkyrimSymbolsFont" = "SkyrimSymbols" Normal
 map "$SkyrimBooks_UnreadableFont" = "SkyrimBooks_Unreadable" Normal
-validNameChars "`1234567890-=~!@#$%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\\asdfghjkl;'zxcvbnm<>?|������������������������������������������������������������������������������������������ ��"
+validNameChars "`1234567890-=~!@#$%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\\asdfghjkl;'zxcvbnm<>?|¡¢£¤¥¦§¨©ª«®¯°²³´¶·¸¹º»¼½¾¿ÄÀÁÂÃÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ ÿ "
+
+
+
