@@ -64,3 +64,30 @@ ignore = [
 	modelName = "furniture\\noble\\nobletablelongbench02.nif"
 	widgetBasePos = "top"
 	widgetPosOffset = { z = 30.0}
+
+[[objectOverrides]]
+	modelName = "architecture\\solitude\\doors\\sdoorjail01.nif"
+	clObjects = [
+		{ path = ["Door Left"] },
+		{ path = ["DoorRight"] },
+	]
+
+[[objectOverrides]]
+	modelName = "dungeons\\imperial\\door\\impwooddoordouble01.nif"
+	clObjects = [
+		{ path = ["DoorRight"] },
+		{ path = ["DoorLeft"] },
+	]
+	
+[[objectOverrides]]
+	modelName = "dungeons\\imperial\\door\\impwooddoordoubleload01.nif"
+	clObjects = [
+		{ path = ["DoorRight01"] },
+		{ path = ["DoorLeft01"] },
+	]
+
+[[objectOverrides]]
+	modelName = "dungeons\\imperial\\door\\impwooddoorsingle01.nif"
+	clObjects = [
+		{ path = ["FortRuinsDoor01"] },
+	]

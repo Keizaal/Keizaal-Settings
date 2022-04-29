@@ -248,6 +248,22 @@
 					"formatString": "{1}",
 					"sourceType": "ModSettingFloat"
 				}
+			},
+
+			{
+				"text": "$BetterThirdPersonSelection_FilterSettings_HeaderText",
+				"type": "header"
+			},
+
+			{
+				"id": "bEnableFiltersForNativeSelection:General",
+				"text": "$BetterThirdPersonSelection_EnableFiltersForNativeSelection_OptionText",
+				"type": "toggle",
+				"help": "$BetterThirdPersonSelection_EnableFiltersForNativeSelection_InfoText",
+				"groupControl": 1,
+				"valueOptions": {
+					"sourceType": "ModSettingBool"
+				}
 			}
 		]
 	},
@@ -373,6 +389,34 @@
 				"valueOptions": {
 					"min": 0.0,
 					"max": 100.0,
+					"step": 1.0,
+					"formatString": "{0}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+
+			{
+				"id": "fWidgetZOffset:Widgets",
+				"text": "$BetterThirdPersonSelection_WidgetZOffset_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_WidgetZOffset_InfoText",
+				"valueOptions": {
+					"min": -200.0,
+					"max": 200.0,
+					"step": 1.0,
+					"formatString": "{0}",
+					"sourceType": "ModSettingFloat"
+				}
+			},
+
+			{
+				"id": "fWidgetZOffsetFirstPerson:Widgets",
+				"text": "$BetterThirdPersonSelection_WidgetZOffsetFirstPerson_OptionText",
+				"type": "slider",
+				"help": "$BetterThirdPersonSelection_WidgetZOffsetFirstPerson_InfoText",
+				"valueOptions": {
+					"min": -200.0,
+					"max": 200.0,
 					"step": 1.0,
 					"formatString": "{0}",
 					"sourceType": "ModSettingFloat"

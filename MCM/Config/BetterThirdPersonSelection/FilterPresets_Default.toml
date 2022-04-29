@@ -32,6 +32,35 @@
 		{ typeName = "Container" },
 		{ typeName = "Light" },
 	]
+
+[[filterPreset]]
+	name = "Stealing Only While Undetected"
+	description = "Disables activating most object types if activation would be a crime, but only if the player is detected by an NPC"
+	
+	conditions = [
+		{ function = "IsCrimeToActivate" },
+		{ connector = "AND" },
+		{ function = "IsDetected" },
+	]
+	
+	formTypes = [
+		{ typeName = "Misc" },
+		{ typeName = "Ingredient" },
+		{ typeName = "Weapon" },
+		{ typeName = "AlchemyItem" },
+		{ typeName = "Armor" },
+		{ typeName = "Ammo" },
+		{ typeName = "Scroll" },
+		{ typeName = "SoulGem" },
+		{ typeName = "Spell" },
+		{ typeName = "KeyMaster" },
+		{ typeName = "Projectile" },
+		{ typeName = "Apparatus" },
+		{ typeName = "Flora" },
+		{ typeName = "Tree" },
+		{ typeName = "Container" },
+		{ typeName = "Light" },
+	]
 	
 [[filterPreset]]
 	name = "Furniture Filter"
