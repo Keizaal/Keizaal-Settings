@@ -1,6 +1,0 @@
-#
-# objects with display name in this list will be ignored by the custom object selector
-#
-
-ignore = [
-]
