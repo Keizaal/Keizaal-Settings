@@ -7,5 +7,8 @@
   },
   "Stealing only While Sneaking": {
     "IsEnabled": 0
+  },
+  "Stealing Only While Undetected": {
+    "IsEnabled": 0
   }
 }
