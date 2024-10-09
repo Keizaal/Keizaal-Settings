@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Exit-9B/CraftingCategories/main/docs/CraftingCategories.schema.json",
+  "categories": {
+    "$Adamantium": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleImperialAdamantium" ]
+    },
+    "$AncientFalmer": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleFalmerAncient" ]
+    },
+    "$AncientNord": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleDraugr" ]
+    },
+    "$Blades": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleBlades" ]
+    },
+     "$Bonemold": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleDunmerBonemold" ]
+    },
+    "$Chainmail": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleImperialChainmail" ]
+    },
+    "$Chitin": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleDunmerChitin" ]
+    },
+    "$Dawnguard": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleDawnguard" ]
+    },
+    "$DBClothes": {
+      "section": "$CLOTHING",
+      "keywords": [ "StyleDarkBrotherhood" ]
+    },
+    "$EastEmpireCompany": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleEastEmpireCompany" ]
+    },
+    "$Elven": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleKhajiitMoonstone" ]
+    },
+    "$Falmer": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleFalmerChitin" ]
+    },
+    "$Forsworn": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleForsworn" ]
+    },
+    "$Guard": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleNordicGuard", "StyleDunmerGuard" ]
+    },
+    "$Hide": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleNordicHide" ]
+    },
+    "$MoragTong": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleMoragTong" ]
+    },
+    "$Mithril": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleRoscreanMithril", "StyleImperialMithril" ]
+    },
+    "$NetchLeather": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleDunmerNetch" ]
+    },
+    "$PenitusOculatus": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StylePenitusOcculatus" ]
+    },
+    "$Silver": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleNordicSilver", "StyleImperialSilver" ]
+    },
+    "$SilverHand": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleSilverHand" ]
+    },
+    "$Skaal": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleSkaal" ]
+    },
+    "$Steel": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleNordicSteel", "StyleRedguardSteel", "StyleImperialSteel", "StyleAltmerSteel", "StyleAltmerSteel", "StyleKhajiitSteel" ]
+    },	
+    "$Stormcloak": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleStormcloakSoldier" ]
+    },
+    "$Vigil": {
+      "section": "$WEAPONS & ARMOR",
+      "keywords": [ "StyleVigil" ]
+    },
+    "$Backpack": {
+      "section": "$CLOTHING",
+      "keywords": [ "ClothingBackpack" ]
+    },
+    "$Common": {
+      "section": "$CLOTHING",
+      "keywords": [ "StyleImperialCommonClothes" ]
+    },
+    "$Noble": {
+      "section": "$CLOTHING",
+      "keywords": [ "StyleImperialNobleClothes" ]
+    },
+    "$Khajiit": {
+      "section": "$CLOTHING",
+      "keywords": [ "StyleKhajiitMonk" ]
+    }
+  }
