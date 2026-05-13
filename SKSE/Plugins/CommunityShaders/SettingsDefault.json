@@ -1,0 +1,619 @@
+{
+ "Advanced": {
+  "Background Compiler Threads": 12,
+  "Compiler Threads": 20,
+  "Dump Shaders": false,
+  "Frame Annotations": false,
+  "Log Level": 2,
+  "Shader Defines": "",
+  "Use FileWatcher": false
+ },
+ "Cloud Shadows": {
+  "Opacity": 0.800000011920929
+ },
+ "Disable at Boot": null,
+ "Dynamic Cubemaps": {
+  "EnabledCreator": 0,
+  "EnabledSSR": 1
+ },
+ "Extended Materials": {
+  "EnableComplexMaterial": 1,
+  "EnableHeightBlending": 1,
+  "EnableParallax": 1,
+  "EnableParallaxWarpingFix": 1,
+  "EnableShadows": 1,
+  "EnableTerrain": 0,
+  "ExtendShadows": 0
+ },
+ "General": {
+  "Enable Async": true,
+  "Enable Disk Cache": true,
+  "Enable Shaders": true
+ },
+ "Grass Collision": {
+  "EnableGrassCollision": true
+ },
+ "Grass Lighting": {
+  "BasicGrassBrightness": 1.0,
+  "Glossiness": 20.0,
+  "OverrideComplexGrassSettings": 0,
+  "SpecularStrength": 0.5,
+  "SubsurfaceScatteringAmount": 0.5
+ },
+ "LOD Blending": {
+  "DisableTerrainVertexColors": 0,
+  "LODObjectBrightness": 1.0,
+  "LODObjectSnowBrightness": 1.0,
+  "LODTerrainBrightness": 1.0
+ },
+ "Light Limit Fix": {
+  "BillboardBrightness": 1.0,
+  "BillboardRadius": 1.0,
+  "EnableContactShadows": false,
+  "EnableParticleLights": true,
+  "EnableParticleLightsCulling": true,
+  "EnableParticleLightsDetection": true,
+  "EnableParticleLightsOptimization": true,
+  "ParticleBrightness": 1.0,
+  "ParticleLightsSaturation": 1.0,
+  "ParticleRadius": 1.0
+ },
+ "Menu": {
+  "EffectToggleKey": 106,
+  "SkipCompilationKey": 27,
+  "Theme": {
+   "FullPalette": [
+    [
+     0.8999999761581421,
+     0.8999999761581421,
+     0.8999999761581421,
+     0.8999999761581421
+    ],
+    [
+     0.6000000238418579,
+     0.6000000238418579,
+     0.6000000238418579,
+     1.0
+    ],
+    [
+     0.10000000149011612,
+     0.10000000149011612,
+     0.15000000596046448,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.05000000074505806,
+     0.05000000074505806,
+     0.10000000149011612,
+     0.8500000238418579
+    ],
+    [
+     0.699999988079071,
+     0.699999988079071,
+     0.699999988079071,
+     0.6499999761581421
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     0.8999999761581421,
+     0.800000011920929,
+     0.800000011920929,
+     0.4000000059604645
+    ],
+    [
+     0.8999999761581421,
+     0.6499999761581421,
+     0.6499999761581421,
+     0.44999998807907104
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.8299999833106995
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.8700000047683716
+    ],
+    [
+     0.4000000059604645,
+     0.4000000059604645,
+     0.800000011920929,
+     0.20000000298023224
+    ],
+    [
+     0.009999999776482582,
+     0.009999999776482582,
+     0.019999999552965164,
+     0.800000011920929
+    ],
+    [
+     0.20000000298023224,
+     0.25,
+     0.30000001192092896,
+     0.6000000238418579
+    ],
+    [
+     0.550000011920929,
+     0.5299999713897705,
+     0.550000011920929,
+     0.5099999904632568
+    ],
+    [
+     0.5600000023841858,
+     0.5600000023841858,
+     0.5600000023841858,
+     1.0
+    ],
+    [
+     0.5600000023841858,
+     0.5600000023841858,
+     0.5600000023841858,
+     0.9100000262260437
+    ],
+    [
+     0.8999999761581421,
+     0.8999999761581421,
+     0.8999999761581421,
+     0.8299999833106995
+    ],
+    [
+     0.699999988079071,
+     0.699999988079071,
+     0.699999988079071,
+     0.6200000047683716
+    ],
+    [
+     0.30000001192092896,
+     0.30000001192092896,
+     0.30000001192092896,
+     0.8399999737739563
+    ],
+    [
+     0.47999998927116394,
+     0.7200000286102295,
+     0.8899999856948853,
+     0.49000000953674316
+    ],
+    [
+     0.5,
+     0.6899999976158142,
+     0.9900000095367432,
+     0.6800000071525574
+    ],
+    [
+     0.800000011920929,
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.30000001192092896,
+     0.6899999976158142,
+     1.0,
+     0.5299999713897705
+    ],
+    [
+     0.4399999976158142,
+     0.6100000143051147,
+     0.8600000143051147,
+     1.0
+    ],
+    [
+     0.3799999952316284,
+     0.6200000047683716,
+     0.8299999833106995,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.699999988079071,
+     0.6000000238418579,
+     0.6000000238418579,
+     1.0
+    ],
+    [
+     0.8999999761581421,
+     0.699999988079071,
+     0.699999988079071,
+     1.0
+    ],
+    [
+     1.0,
+     1.0,
+     1.0,
+     0.8500000238418579
+    ],
+    [
+     1.0,
+     1.0,
+     1.0,
+     0.6000000238418579
+    ],
+    [
+     1.0,
+     1.0,
+     1.0,
+     0.8999999761581421
+    ],
+    [
+     0.4000000059604645,
+     0.5199999809265137,
+     0.6700000166893005,
+     0.8399999737739563
+    ],
+    [
+     0.0,
+     0.46000000834465027,
+     1.0,
+     0.800000011920929
+    ],
+    [
+     0.20000000298023224,
+     0.4099999964237213,
+     0.6800000071525574,
+     1.0
+    ],
+    [
+     0.07000000029802322,
+     0.10000000149011612,
+     0.15000000596046448,
+     0.9700000286102295
+    ],
+    [
+     0.12999999523162842,
+     0.25999999046325684,
+     0.41999998688697815,
+     1.0
+    ],
+    [
+     0.699999988079071,
+     0.6000000238418579,
+     0.6000000238418579,
+     0.5
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.8700000047683716,
+     1.0,
+     1.0
+    ],
+    [
+     0.2199999988079071,
+     0.25999999046325684,
+     0.699999988079071,
+     1.0
+    ],
+    [
+     0.800000011920929,
+     0.25999999046325684,
+     0.25999999046325684,
+     1.0
+    ],
+    [
+     0.47999998927116394,
+     0.7200000286102295,
+     0.8899999856948853,
+     0.49000000953674316
+    ],
+    [
+     0.30000001192092896,
+     0.30000001192092896,
+     0.3499999940395355,
+     1.0
+    ],
+    [
+     0.23000000417232513,
+     0.23000000417232513,
+     0.25,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0,
+     1.0,
+     0.05999999865889549
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.3499999940395355
+    ],
+    [
+     0.800000011920929,
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.4399999976158142,
+     0.6100000143051147,
+     0.8600000143051147,
+     1.0
+    ],
+    [
+     0.30000001192092896,
+     0.30000001192092896,
+     0.30000001192092896,
+     0.5600000023841858
+    ],
+    [
+     0.20000000298023224,
+     0.20000000298023224,
+     0.20000000298023224,
+     0.3499999940395355
+    ],
+    [
+     0.20000000298023224,
+     0.20000000298023224,
+     0.20000000298023224,
+     0.3499999940395355
+    ]
+   ],
+   "GlobalScale": 0.0,
+   "Palette": {
+    "Background": [
+     0.0,
+     0.0,
+     0.0,
+     0.5882353186607361
+    ],
+    "Border": [
+     0.5882353186607361,
+     0.5882353186607361,
+     0.5882353186607361,
+     0.5882353186607361
+    ],
+    "Text": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "Style": {
+    "ButtonTextAlign": [
+     0.5,
+     0.5
+    ],
+    "CellPadding": [
+     16.0,
+     2.0
+    ],
+    "ChildBorderSize": 0.0,
+    "ChildRounding": 0.0,
+    "ColorButtonPosition": 1,
+    "ColumnsMinSpacing": 6.0,
+    "DockingSeparatorSize": 2.0,
+    "FrameBorderSize": 1.5,
+    "FramePadding": [
+     4.0,
+     4.0
+    ],
+    "FrameRounding": 0.0,
+    "GrabMinSize": 12.0,
+    "GrabRounding": 0.0,
+    "IndentSpacing": 8.0,
+    "ItemInnerSpacing": [
+     4.0,
+     4.0
+    ],
+    "ItemSpacing": [
+     8.0,
+     12.0
+    ],
+    "LogSliderDeadzone": 4.0,
+    "MouseCursorScale": 1.0,
+    "PopupBorderSize": 1.0,
+    "PopupRounding": 0.0,
+    "ScrollbarRounding": 9.0,
+    "ScrollbarSize": 14.0,
+    "SelectableTextAlign": [
+     0.0,
+     0.0
+    ],
+    "SeparatorTextAlign": [
+     0.0,
+     0.5
+    ],
+    "SeparatorTextBorderSize": 3.0,
+    "SeparatorTextPadding": [
+     20.0,
+     3.0
+    ],
+    "TabBarBorderSize": 1.0,
+    "TabBorderSize": 0.0,
+    "TabMinWidthForCloseButton": 0.0,
+    "TabRounding": 4.0,
+    "TableAngledHeadersAngle": 0.6108652353286743,
+    "WindowBorderSize": 3.0,
+    "WindowMinSize": [
+     32.0,
+     32.0
+    ],
+    "WindowPadding": [
+     16.0,
+     16.0
+    ],
+    "WindowRounding": 0.0
+   },
+   "UseSimplePalette": true
+  },
+  "ToggleKey": 35
+ },
+ "Replace Original Shaders": {
+  "BloodSplatter": true,
+  "DistantTree": true,
+  "Effect": true,
+  "Grass": true,
+  "ImageSpace": true,
+  "Lighting": true,
+  "Particle": true,
+  "Sky": true,
+  "Utility": true,
+  "Water": true
+ },
+ "Screen Space GI": {
+  "AOPower": 2.0,
+  "AORadius": 100.0,
+  "BlurRadius": 5.0,
+  "DepthDisocclusion": 0.10000000149011612,
+  "DepthFadeRange": [
+   40000.0,
+   50000.0
+  ],
+  "DistanceNormalisation": 2.0,
+  "EnableBlur": true,
+  "EnableExperimentalSpecularGI": false,
+  "EnableGI": true,
+  "EnableGIBounce": true,
+  "EnableTemporalDenoiser": true,
+  "Enabled": true,
+  "GIBounceFade": 0.30000001192092896,
+  "GIDistanceCompensation": 0.0,
+  "GIRadius": 400.0,
+  "GISaturation": 0.8999999761581421,
+  "GIStrength": 1.5,
+  "MaxAccumFrames": 16,
+  "MinScreenRadius": 0.009999999776482582,
+  "NormalDisocclusion": 0.10000000149011612,
+  "NumSlices": 5,
+  "NumSteps": 8,
+  "ResolutionMode": 1,
+  "Thickness": 75.0
+ },
+ "Screen Space Shadows": {
+  "BilinearThreshold": 0.019999999552965164,
+  "Enable": 1,
+  "SampleCount": 1,
+  "ShadowContrast": 4.0,
+  "SurfaceThickness": 0.009999999776482582
+ },
+ "Skylighting": {
+  "MaxZenith": 0.7853981256484985,
+  "MinDiffuseVisibility": 0.10000000149011612,
+  "MinSpecularVisibility": 0.009999999776482582,
+  "SSGIAmbientDimmer": 1.0
+ },
+ "Subsurface Scattering": {
+  "BaseProfile": {
+   "BlurRadius": 1.0,
+   "Falloff": [
+    0.5600000023841858,
+    0.5600000023841858,
+    0.5600000023841858
+   ],
+   "Strength": [
+    0.47999998927116394,
+    0.4099999964237213,
+    0.2800000011920929
+   ],
+   "Thickness": 2.0
+  },
+  "EnableCharacterLighting": 0,
+  "HumanProfile": {
+   "BlurRadius": 1.0,
+   "Falloff": [
+    1.0,
+    0.3700000047683716,
+    0.30000001192092896
+   ],
+   "Strength": [
+    0.47999998927116394,
+    0.4099999964237213,
+    0.2800000011920929
+   ],
+   "Thickness": 2.0
+  }
+ },
+ "Terrain Blending": null,
+ "Terrain Shadows": {
+  "EnableTerrainShadow": true
+ },
+ "Upscaling": {
+  "dlssPreset": 3,
+  "frameGenerationForceEnable": 0,
+  "frameGenerationMode": 1,
+  "frameLimitMode": 1,
+  "sharpness": 0.5,
+  "upscaleMethod": 1,
+  "upscaleMethodNoDLSS": 1,
+  "upscaleMethodNoFSR": 1
+ },
+ "Version": "1-2-1-0",
+ "Volumetric Lighting": {
+  "EnabledVL": 1
+ },
+ "Water Effects": null,
+ "Wetness Effects": {
+  "EnableRaindropFx": 1,
+  "EnableRipples": 1,
+  "EnableSplashes": 1,
+  "EnableWetnessEffects": 1,
+  "MaxPuddleWetness": 2.5,
+  "MaxRainWetness": 1.0,
+  "MaxShoreWetness": 0.5,
+  "MinRainWetness": 0.6499999761581421,
+  "PuddleMaxAngle": 0.949999988079071,
+  "PuddleMinWetness": 0.8500000238418579,
+  "PuddleRadius": 1.0,
+  "RaindropChance": 0.30000001192092896,
+  "RaindropGridSize": 4.0,
+  "RaindropInterval": 0.5,
+  "RippleBreadth": 0.5,
+  "RippleLifetime": 0.15000000596046448,
+  "RippleRadius": 1.0,
+  "RippleStrength": 1.0,
+  "ShoreRange": 32,
+  "SkinWetness": 0.949999988079071,
+  "SplashesLifetime": 10.0,
+  "SplashesMaxRadius": 0.5,
+  "SplashesMinRadius": 0.30000001192092896,
+  "SplashesStrength": 1.0499999523162842,
+  "WeatherTransitionSpeed": 3.0
+ }
+}
