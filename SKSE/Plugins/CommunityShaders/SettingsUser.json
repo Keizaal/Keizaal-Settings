@@ -63,7 +63,6 @@
  "Grass Lighting": {
   "BasicGrassBrightness": 1.0,
   "ComplexGrassThreshold": 0.029999999329447746,
-  "EnableWrappedLighting": 0,
   "Glossiness": 20.0,
   "OverrideComplexGrassSettings": 0,
   "SpecularStrength": 0.5,
@@ -136,7 +135,6 @@
   "effectLightingMult": 0.3199999928474426,
   "emitColorGamma": 1.7999999523162842,
   "emitColorMult": 1.0,
-  "enableGammaCorrection": 1,
   "enableLinearLighting": 0,
   "fogAlphaGamma": 1.7999999523162842,
   "fogGamma": 1.9700000286102295,
@@ -311,6 +309,7 @@
   "enableLODTerrainTilingFix": 1,
   "enableTilingFix": 1
  },
+ "True PBR": null,
  "Unified Water": {
   "UseOptimisedMeshes": true
  },
@@ -331,7 +330,7 @@
   "upscaleMethod": 3,
   "upscaleMethodNoDLSS": 2
  },
- "Version": "1-5-1-0",
+ "Version": "1-5-2-0",
  "Volumetric Lighting": {
   "ExteriorCustomSize": {
    "Depth": 90,

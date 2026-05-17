@@ -192,9 +192,9 @@ fActivateInfoPosY=517
 fActivateBarPosX=640
 fActivateBarPosY=
 
-bLockStealthMeter=0
+bLockStealthMeter=1
 fStealthMeterPosX=
-fStealthMeterPosY=650
+fStealthMeterPosY=
 
 bLockLocationInfo=1
 fLocationInfoPosX=
