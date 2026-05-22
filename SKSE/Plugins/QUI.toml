@@ -8,12 +8,12 @@ Locale = "" # Override the language locale (default: "")
 
 [PluginExplorer]
 Enable = true  # Enable PluginExplorer (default: true)
-Pause = true  # Pause the game when the PluginExplorer interface is open (default: false)
+Pause = true   # Pause the game when the PluginExplorer interface is open (default: false)
 Loop = true    # Reopen the PluginExplorer interface when the item container is closed (default: true)
 Sound = true   # Unused (default: true)
 
 [PluginExplorer.Key]
-KeyboardToggle = 211  # Toggle the PluginExplorer interface (default: 87 = F11)
+KeyboardToggle = 211 # Toggle the PluginExplorer interface (default: 87 = F11)
 
 # Amount of items in the container per type
 [PluginExplorer.Count]
@@ -37,7 +37,7 @@ Weapon = 1
 "Update.esm" = true
 
 [MainMenu]
-Enable = false   # Enable MainMenu hooks and features (default: true)
+Enable = false  # Enable MainMenu hooks and features (default: true)
 
 [MainMenu.UI]
 Logo = true     # Show the Bethesda logo (default: true)
