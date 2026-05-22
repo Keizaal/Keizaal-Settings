@@ -37,12 +37,12 @@ Weapon = 1
 "Update.esm" = true
 
 [MainMenu]
-Enable = true   # Enable MainMenu hooks and features (default: true)
+Enable = false   # Enable MainMenu hooks and features (default: true)
 
 [MainMenu.UI]
 Logo = true     # Show the Bethesda logo (default: true)
-Motd = false     # Show the Message of the Day (default: true)
-Banner = false   # Show the Anniversary Edition banner (default: true)
+Motd = true     # Show the Message of the Day (default: true)
+Banner = true   # Show the Anniversary Edition banner (default: true)
 
 [MainMenu.List]
 CC = true       # Show the Creation Club entry (default: true)
