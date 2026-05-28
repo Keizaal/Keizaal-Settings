@@ -61,7 +61,7 @@
   "TrackRagdolls": true
  },
  "Grass Lighting": {
-  "BasicGrassBrightness": 1.0,
+  "BasicGrassBrightness": 0.75,
   "ComplexGrassThreshold": 0.029999999329447746,
   "Glossiness": 20.0,
   "OverrideComplexGrassSettings": 0,
@@ -71,7 +71,7 @@
  "HDR Display": {
   "dontShowHDRWarning": false,
   "enableHDR": false,
-  "hdrAutoDetected": false,
+  "hdrAutoDetected": true,
   "hdrPaperWhite": 203,
   "hdrPeakNits": 800,
   "hdrUIBrightness": 1.0
